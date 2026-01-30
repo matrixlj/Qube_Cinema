@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<StreamDevice name="Christie" xmlns="http://schemas.qubecinema.com/Automation/StreamDevice/2008-01-26">
+	<Init>
+		<Parameter name="UserName"/>
+		<Parameter name="Password"/>
+		<Instructions>
+			<Send>(UID &quot;$UserName&quot; &quot;$Password&quot;)</Send>
+		</Instructions>
+	</Init>
+	
+	<Method name="SwitchChannel">
+		<Parameter name="Channel"/>
+		<Instructions>
+			<Send>(CHA $Channel)</Send>
+		</Instructions>
+	</Method>
+	
+	<Method name="ShutterOpen">
+		<Instructions>
+			<Send>(SHU 0)</Send>
+		</Instructions>
+	</Method>
+	
+	<Method name="ShutterClose">
+		<Instructions>
+			<Send>(SHU 1)</Send>
+		</Instructions>
+	</Method>
+	
+	<Method name="LampOn">
+		<Instructions>
+			<Send>(PWR 1)</Send>
+		</Instructions>
+	</Method>
+	
+	<Method name="LampOff">
+		<Instructions>
+			<Send>(PWR 0)</Send>
+		</Instructions>
+	</Method>
+
+  <Method name="SelecTestPattern">
+    <Parameter name="TestPattern"/>
+    <Instructions>
+      <Send>(ITP $TestPattern)</Send>
+    </Instructions>
+  </Method>
+
+</StreamDevice>

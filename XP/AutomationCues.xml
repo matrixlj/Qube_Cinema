@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Cues xmlns="http://schemas.qubecinema.com/Automation/Cues/2008-01-26">
+	
+	<Cue name="Accendi Lampada">
+		<Actions>
+			
+			<InvokeMethod name="LampOn" device="Christie"/>
+		</Actions>
+	</Cue>
+  
+	<Cue name="Spegni Lampada">
+		<Actions>
+			
+			<InvokeMethod name="LampOff" device="Christie"/>			
+		</Actions>
+	</Cue>
+  
+	<Cue name="Apri Otturatore">
+		<Actions>
+			
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+		</Actions>
+	</Cue>
+  
+	<Cue name="Chiudi Otturatore">
+		<Actions>
+			
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+		</Actions>
+	</Cue>
+
+ <Cue name="CP750 Mute">
+    <Actions>
+       <InvokeMethod name="Mute" device="CP750"/>
+    </Actions>
+   </Cue>
+
+ <Cue name="CP750 Unmute">
+    <Actions>
+       <InvokeMethod name="Unmute" device="CP750"/>
+    </Actions>
+   </Cue>
+
+ <Cue name="Digital Input1">
+    <Actions>
+       <InvokeMethod name="SelectInput" device="CP750">
+	<Parameter name="Input" value="dig_1"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+<Cue name="Digital Input2">
+    <Actions>
+       <InvokeMethod name="SelectInput" device="CP750">
+	<Parameter name="Input" value="dig_2"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+ <Cue name="Digital Input3">
+    <Actions>
+       <InvokeMethod name="SelectInput" device="CP750">
+	<Parameter name="Input" value="dig_3"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+ <Cue name="Digital Input4">
+    <Actions>
+       <InvokeMethod name="SelectInput" device="CP750">
+	<Parameter name="Input" value="dig_4"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+ <Cue name="Non_Sync_Input">
+    <Actions>
+       <InvokeMethod name="SelectInput" device="CP750">
+	<Parameter name="Input" value="non_sync"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+ <Cue name="Audio CP45">
+    <Actions>
+       <InvokeMethod name="SelectInput" device="CP750">
+	<Parameter name="Input" value="analog"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 3.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="30"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 3.5">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="35"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+
+  <Cue name="Volume 4.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="40"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 4.5">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="45"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 5.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="50"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 5.5">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="55"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 6.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="60"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 6.5">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="65"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 7.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="70"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 7.5">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="75"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 8.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="80"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 8.5">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="85"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+
+  <Cue name="Volume 9.0">
+    <Actions>
+       <InvokeMethod name="SelectFaderPreset" device="CP750">
+	<Parameter name="PresetValue" value="90"/>
+       </InvokeMethod>
+    </Actions>
+   </Cue>
+  
+	<Cue name="01: pcf flat xyz"><!--During execution of this cue,it is made to close the shutter,pause the show,execute the marco,open the shutter and play the show-->
+		<Actions>
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+			<InvokeMethod name="Pause" device="Me"/>
+			<InvokeMethod name="SwitchChannel" device="Christie">
+				<Parameter name="Channel" value="101"/><!--Channel is the parameter which specifies the channel number to be switched.Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.This number should be used with prefix 10.Check the projector configuration to get the exact value of the specific macro --> 	  
+			</InvokeMethod>
+			<Sleep duration="7" />
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="Play" device="Me"/>
+		</Actions>
+	</Cue>
+  
+	<Cue name="02: pcf scope xyz"><!--During execution of this cue,it is made to close the shutter,pause the show,execute the marco,open the shutter and play the show-->
+		<Actions>
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+			<InvokeMethod name="Pause" device="Me"/>
+			<InvokeMethod name="SwitchChannel" device="Christie">
+				<Parameter name="Channel" value="102"/><!--Channel is the parameter which specifies the channel number to be switched.Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.This number should be used with prefix 10.Check the projector configuration to get the exact value of the specific macro --> 	  
+			</InvokeMethod>
+			<Sleep duration="7" />
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="Play" device="Me"/>
+		</Actions>
+	</Cue>
+  
+	
+  
+	<Cue name="13: MICROCINEMA"><!--During execution of this cue,it is made to close the shutter,pause the show,execute the marco,open the shutter and play the show-->
+		<Actions>
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+			<InvokeMethod name="Pause" device="Me"/>
+			<InvokeMethod name="SwitchChannel" device="Christie">
+				<Parameter name="Channel" value="113"/><!--Channel is the parameter which specifies the channel number to be switched.Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.This number should be used with prefix 10.Check the projector configuration to get the exact value of the specific macro --> 	  
+			</InvokeMethod>
+			<Sleep duration="7" />
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="Play" device="Me"/>
+		</Actions>
+	</Cue>
+
+    <Cue name="14: HUMAX"><!--During execution of this cue,it is made to close the shutter,pause the show,execute the marco,open the shutter and play the show-->
+		<Actions>
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+			<InvokeMethod name="Pause" device="Me"/>
+			<InvokeMethod name="SwitchChannel" device="Christie">
+				<Parameter name="Channel" value="114"/><!--Channel is the parameter which specifies the channel number to be switched.Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.This number should be used with prefix 10.Check the projector configuration to get the exact value of the specific macro --> 	  
+			</InvokeMethod>
+			<Sleep duration="7" />
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="Play" device="Me"/>
+		</Actions>
+	</Cue>
+
+    <Cue name="15: 3D in 2D Flat 1998x1080"><!--During execution of this cue,it is made to close the shutter,pause the show,execute the marco,open the shutter and play the show-->
+		<Actions>
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+			<InvokeMethod name="Pause" device="Me"/>
+			<InvokeMethod name="SwitchChannel" device="Christie">
+				<Parameter name="Channel" value="115"/><!--Channel is the parameter which specifies the channel number to be switched.Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.This number should be used with prefix 10.Check the projector configuration to get the exact value of the specific macro --> 	  
+			</InvokeMethod>
+			<Sleep duration="7" />
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="Play" device="Me"/>
+		</Actions>
+	</Cue>
+
+    <Cue name="16: 3D in 2D Scope 2048x858"><!--During execution of this cue,it is made to close the shutter,pause the show,execute the marco,open the shutter and play the show-->
+		<Actions>
+			<InvokeMethod name="ShutterClose" device="Christie"/>
+			<InvokeMethod name="Pause" device="Me"/>
+			<InvokeMethod name="SwitchChannel" device="Christie">
+				<Parameter name="Channel" value="116"/><!--Channel is the parameter which specifies the channel number to be switched.Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.This number should be used with prefix 10.Check the projector configuration to get the exact value of the specific macro --> 	  
+			</InvokeMethod>
+			<Sleep duration="7" />
+			<InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="Play" device="Me"/>
+		</Actions>
+	</Cue>
+
+
+  <!--Definizione azioni Intervallo-->
+
+  <Cue name="Intervallo 07 min">
+    <Actions>
+      <InvokeMethod name="Pause" device="Me"/>
+        <Sleep duration="1" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="19"/>
+      </InvokeMethod>
+        <Sleep duration="420" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="0"/>
+      </InvokeMethod>
+        <Sleep duration="5" />
+      <InvokeMethod name="Play" device="Me"/>
+    </Actions>
+  </Cue>
+
+  <Cue name="Intervallo 12 min">
+    <Actions>
+      <InvokeMethod name="Pause" device="Me"/>
+        <Sleep duration="1" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="19"/>
+      </InvokeMethod>
+        <Sleep duration="720" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="0"/>
+      </InvokeMethod>
+        <Sleep duration="5" />
+      <InvokeMethod name="Play" device="Me"/>
+    </Actions>
+  </Cue>
+
+  <Cue name="Intervallo 15 min">
+    <Actions>
+      <InvokeMethod name="Pause" device="Me"/>
+        <Sleep duration="1" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="19"/>
+      </InvokeMethod>
+        <Sleep duration="900" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="0"/>
+      </InvokeMethod>
+        <Sleep duration="5" />
+      <InvokeMethod name="Play" device="Me"/>
+    </Actions>
+  </Cue>
+
+  <Cue name="Intervallo 0 test">
+    <Actions>
+      <InvokeMethod name="Pause" device="Me"/>
+        <Sleep duration="1" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="19"/>
+      </InvokeMethod>
+        <Sleep duration="15" />
+      <InvokeMethod name="SelectTestPattern" device="Christie">
+        <Parameter name="TestPattern" value="0"/>
+      </InvokeMethod>
+        <Sleep duration="5" />
+      <InvokeMethod name="Play" device="Me"/>
+    </Actions>
+  </Cue>
+
+<Cue name="Luci mezze1">
+    <Actions>
+      <InvokeMethod name="SetPin" device="JNIOR">
+        <Parameter name="Pin" value="5" />
+        <Parameter name="State" value="ON" />
+      </InvokeMethod>
+      <Sleep duration="1" />
+      <InvokeMethod name="SetPin" device="JNIOR">
+        <Parameter name="Pin" value="5" />
+        <Parameter name="State" value="OFF" />
+      </InvokeMethod>
+    </Actions>
+  </Cue>
+  <Cue name="Luci Piene">
+    <Actions>
+      <InvokeMethod name="SetPin" device="JNIOR">
+        <Parameter name="Pin" value="6" />
+        <Parameter name="State" value="ON" />
+      </InvokeMethod>
+      <Sleep duration="1" />
+      <InvokeMethod name="SetPin" device="JNIOR">
+        <Parameter name="Pin" value="6" />
+        <Parameter name="State" value="OFF" />
+      </InvokeMethod>
+    </Actions>
+  </Cue>
+  <Cue name="Buio totale">
+    <Actions>
+      <InvokeMethod name="SetPin" device="JNIOR">
+        <Parameter name="Pin" value="7" />
+        <Parameter name="State" value="ON" />
+      </InvokeMethod>
+      <Sleep duration="1" />
+      <InvokeMethod name="SetPin" device="JNIOR">
+        <Parameter name="Pin" value="7" />
+        <Parameter name="State" value="OFF" />
+      </InvokeMethod>
+    </Actions>
+  </Cue>	
+
+</Cues>

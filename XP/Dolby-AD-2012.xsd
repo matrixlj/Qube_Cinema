@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.dolby.com/schemas/2012/AD"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:cpl="http://www.smpte-ra.org/schemas/429-7/2006/CPL"
+xmlns:axd="http://www.dolby.com/schemas/2012/AD"
+elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="http://www.smpte-ra.org/schemas/429-7/2006/CPL"/>
+
+  <xs:element name="AuxData" type="axd:DataTrackFileAssetType" />
+  <xs:complexType name="DataTrackFileAssetType">
+    <xs:complexContent>
+      <xs:extension base="cpl:TrackFileAssetType">
+        <xs:sequence>
+          <xs:element name="DataType" type="xs:anyURI" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

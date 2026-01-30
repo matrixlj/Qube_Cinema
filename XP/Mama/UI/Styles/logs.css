@@ -1,0 +1,163 @@
+﻿.rowStyle
+{
+	cursor: default;
+	color: windowtext; 
+	font: menu; 		
+	border-bottom:sold thin black;
+}
+
+.headerStyle
+{
+	background: buttonface;
+	font: menu;
+	position: relative;
+	text-align:left;		
+	top: expression(this.offsetParent.scrollTop - 1);	 		
+}
+
+#logsTableDiv
+{
+	left: 46px;
+	top: 140px;
+	position: absolute;	
+	overflow:hidden;
+	overflow-x:hidden;
+	width: 914px;
+	height: 391px;
+	border: 1px solid black;
+	background-color:White;
+	visibility:hidden;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.securityLogMessageHidden
+{
+    display:none;
+}
+
+.gridViewHidden
+{
+    display:none;    
+}
+
+.securityLogMessageShow
+{
+    padding-top:150px;
+    display:block;
+}
+
+.gridViewShow
+{
+    display:block;    
+}
+
+#progress
+{
+	font-family: Trebuchet MS ; 
+	position : absolute;
+	left : 46px;
+	top : 137px;
+	font-size:20px;	
+}
+
+.logFrom
+{	
+    width: 78px;		
+    height: 16px;
+}
+
+.logTo
+{	
+    width: 78px;	
+	height: 16px;
+}
+
+.getLogs
+{
+	left: 868px;
+	top: 80px;
+	position:absolute;			
+	cursor:hand;
+}
+ 
+.getTxt
+{
+	left: 875px;
+	top: 88px;
+	position:absolute;			
+	cursor:pointer;
+	white-space:nowrap;
+	width:100px;
+	text-align:center;			
+}
+
+#fromLabel
+{
+	 height: 20px;
+	 text-align:right;
+}
+
+#toLabel
+{
+	height: 20px;
+	text-align:right;
+}
+
+.downloadLog
+{
+	left: 874px;
+	top: 553px;
+	position: absolute;
+	color:White;
+	font-weight:bold;
+	font-family:Trebuchet MS;
+	font-size:14px;
+	white-space:nowrap;
+}
+
+
+.rowStyle td
+{
+	border-collapse:collapse;
+	border-bottom:solid 1px gray;
+	border-top:0px;
+	border-right:solid 1px gray;
+	border-left:0px;
+	padding-left:2px;		
+	font-weight:normal;
+	font-size:11px;
+	font-family:Tahoma;
+}
+
+.gridView
+{
+	border:0px;
+}
+
+tr.pageNavigator 
+{
+	height:100%;
+	padding:0px;
+}
+
+.pageNavigator td
+{	
+	vertical-align:bottom;
+	font-weight:bold;
+	font-family:Trebuchet MS;
+	font-size:14px;			
+	border-collapse:collapse;
+	border-bottom:0px;
+	border-top:0px;
+	border-right:0px;
+	border-left:0px;
+}
+
+.pageNavigator table td
+{
+	width:15px;
+	text-align:center;
+	vertical-align:middle;
+}
+

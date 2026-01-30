@@ -1,0 +1,348 @@
+﻿.PingEnabled
+{
+    cursor:pointer;
+    background-image:url("../res/Skins/#SKINCOLOUR#/Setup/PingEnabled.gif");	
+}
+
+.PingDisabled
+{    
+    cursor:default;
+    background-image:url("../res/Skins/#SKINCOLOUR#/Setup/PingDisabled.gif");	
+}
+
+#savemediafolderDisabled
+{
+	background-repeat: no-repeat;	
+}
+
+.divnewmeidasetup
+{
+	cursor:pointer;
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/New Disabled.gif"); 
+}
+
+.newEnabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/New Enabled.gif");
+}
+
+.deleteEnabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Delete Enabled.gif");	
+}
+
+.divdeletesetup
+{
+	cursor:pointer;
+	display:none;
+}
+
+#deleteDisabled
+{
+	cursor:auto;
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Delete Disabled.gif");
+}
+
+#mediafoldersDiv
+{
+	height:94px;
+	width: 430px;
+	background-color:white;	
+	overflow: auto;
+	overflow-x:hidden;
+}
+
+#mediafoldersTable
+{
+	overflow:auto;
+	overflow-x:hidden;
+	width: 430px;
+	height: 13px;
+	position: relative;	
+}
+
+.mediafolderPath
+{
+	width: 230px;
+	font-family: Trebuchet MS;
+	font-size: 13px;
+	line-height: 18px;
+	overflow:hidden;
+	white-space:nowrap;
+	padding-left:2px;
+}
+
+.mediafolderQuota
+{
+	width:60px;
+	text-align:right;
+	font-family: Trebuchet MS;
+	font-size: 13px;
+	line-height: 18px;
+	overflow:hidden;
+	white-space:nowrap
+}
+
+.hoverMenu
+{
+	display:none;
+	background-color:Transparent;
+}
+
+#mfTables
+ {
+	position:absolute;
+	left: 448px;
+	top: 176px;
+	width: 402px;
+	height: 100px;
+	text-transform: capitalize;
+	color: #acde00;
+	font-family: 'Arial';
+	font-size: small;
+	visibility:hidden;
+ }
+  
+#SetupLabel
+{
+	position:absolute;
+	left: 80px;
+	top: 81px;
+	white-space:nowrap;
+}
+
+#IPLabel
+{
+	position:absolute;
+	left: 80px;
+	top: 230px;
+}
+
+.hoverMenuText
+{
+	margin-left:5px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFF;
+	font-family:Trebuchet MS;
+	text-decoration: underline;
+	cursor:pointer;
+	font-weight:bold;
+}
+  
+#timeZoneLbl, #resolutionLbl1, #outputLbl1, #lensLbl1, #activeAspectLbl1, 
+resolutionLbl2, #outputLbl2, #lensLbl2, #activeAspectLbl2, #mediafolderLbl
+{
+    white-space:nowrap;
+}
+ 
+.setupOutputLabel, .setupresolutionLabel, .setupAspectLabel, .setupLensLabel, 
+.setupTimeZoneLabel, .setupAudioSampleRate
+{
+	position:relative;
+	font-weight:normal;
+	font-size:13px;
+	white-space:nowrap;
+}
+
+.projectorcontent
+{
+	width:100%;
+	background-color:White;
+}
+
+.projectorcontent td span
+{
+	color:Black;
+	font-weight:normal;
+}
+
+.projectorcontent a
+{
+	color: Black;
+	text-decoration:none;	
+}
+
+.projectorcontent a:hover
+{
+	color: Black;
+	text-decoration: underline;
+}
+
+.projectorcontent input
+{
+	width:205px;
+}
+
+.zonesave
+{
+	visibility:hidden;	
+}
+
+.audioType input
+ {
+	height:16px;
+ }
+
+.lblprojectorcss
+{
+	position:absolute;
+	width:180px;
+	top:-8px;	
+}
+
+.uploadTxt
+{
+	left: 35px;
+	top: 180px;
+	position:absolute;			
+	cursor:pointer;
+	color:Black;
+	text-decoration:none;
+	white-space:nowrap;			
+}
+
+.properties
+{
+    position:absolute;
+	left:495px;
+	top:335px;	
+}
+
+.selectedRow td
+{
+	border-collapse:collapse;
+	border-bottom:dotted 1px black;
+	border-top:dotted 1px black;
+	border-right:0px;
+	border-left:0px;
+}
+
+.unselectedRow td
+{
+	border-collapse:collapse;
+	border-bottom:0px;
+	border-top:0px;
+	border-right:0px;
+	border-left:0px;
+}
+
+.features
+{
+    background-color:White;    
+	width:915px;
+    height:202px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.featureStatus
+{
+    width:60px;
+    padding-left:10px;
+    padding-top:10px;
+}
+
+.featureName
+{	
+	width:430px;
+	text-align: left;
+}
+
+.featureName, .featureValidFrom, .featureValidTill
+{
+    color: gray;
+	vertical-align: middle;	
+	overflow: hidden; 
+	float:left; 
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 	
+	font-weight:bold;
+	padding-left:2px;
+	padding-top:10px;
+}
+
+.featureValidFrom, .featureValidTill
+{
+    width:170px;
+    text-align:center;    
+}
+
+.TabContentCSS td
+{
+    padding-right:5px;
+    padding-top:10px;
+    white-space:nowrap;    
+}
+
+.ZeroTopPadding td
+{
+    padding-top:0px;
+}
+
+.FeaturesFrame
+{    
+    padding:10px 8px 10px 8px;
+    width:915px;
+    height:202px;
+}
+
+.setupMenuBody
+{
+    background-color:Transparent;
+}
+
+.SetupRightSidePanel
+{
+    position:absolute;
+    left:500px;
+}
+
+.SetupLeftSidePanel
+{
+    position:absolute;
+    top:18px;
+}
+
+.featureStatusImages
+{
+    position:absolute;
+    top:270px;
+    left:475px;
+    width:465px;    
+}
+
+.TCPropertiesSaveEnable
+{
+    display:block;
+}
+
+.TCPropertiesSaveDisable
+{
+    display:none;
+}
+
+.soundProcessor-content
+{
+    margin-top: 10px;
+    display:inline-block;
+}
+
+.soundProcessor-content div
+{
+    display:inline;
+    position:relative;
+    width:200px;
+}
+
+.soundProcessor-content a
+{
+    margin-right: 15px;
+    color:white;
+}
+
+.soundProcessor-content a:hover
+{
+    text-decoration:underline;
+}

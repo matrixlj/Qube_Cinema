@@ -1,0 +1,369 @@
+﻿.statusTable
+{
+	left: 91px;
+	top: 72px;
+	position: absolute;
+}
+
+#controlpositionBar
+{
+	left: 105px;
+	width: 0px;
+	top: 257px;
+	height: 16px;
+	position: absolute;		
+	background-repeat: repeat-x;
+}
+
+#controlevents
+{
+	left: 120px;
+	top: 330px;
+	width: 847px;
+	height: 65px;
+	position: absolute;	
+}
+
+.playbackControlLabel
+{
+	position:absolute;
+	left:100px;
+	top:530px;
+	width:300px;
+	color:White;
+}
+
+.playbackControlLabel td
+{
+	text-align:center;
+}
+
+.stop, .controlstop, #controlstopDisabled, #controlStopInactive
+{
+	left: 101px;
+	top: 435px;	
+	width: 92px;
+	height: 92px;
+	position: absolute;
+	background-repeat: no-repeat;	
+}
+
+.controlstop
+{
+	cursor:pointer;
+	visibility:hidden;
+}
+
+.paly, .controlplay, #controlplayDisabled, #controlPlayInactive
+{
+	left: 301px;
+	top: 435px;
+	width: 91px;
+	height: 91px;
+	position: absolute;
+	background-repeat: no-repeat;
+} 
+
+.controlplay
+{
+	visibility:hidden;
+	cursor:pointer;
+}
+ 
+.pause, .controlpause, #controlpauseDisabled, #controlPauseInactive
+{
+	left: 201px;
+	top: 435px;
+	width: 91px;
+	height: 91px;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+.controlpause
+{	
+	visibility:hidden;
+	cursor:pointer;
+}
+
+.divresume, #controlresumeDisabled
+{
+	left: 697px;
+	top: 510px;
+	width: 140px;
+	height: 47px;
+	position: absolute;
+	background-repeat: no-repeat;
+	cursor:pointer;
+}
+
+.divresume
+{
+	cursor:pointer;
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Resume Enabled.gif");
+}
+
+#controlresumeDisabled
+{	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Resume Disabled.gif");
+}
+
+.divload, #controlloadDisabled
+{
+	left: 843px;
+	top: 510px;
+	width: 140px;
+	height: 47px;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+.divload
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Load Enabled.gif");
+}
+
+#controlloadDisabled
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Load Disabled.gif");
+}
+
+#controlstarttime
+{
+	left: 101px;
+	top: 279px;
+	width: 90px;
+	height: 1px;
+	position: absolute;
+	white-space:nowrap;
+}
+
+#controlcurrentPos
+{
+	left: 484px;
+	top: 279px;
+	width: 150px;
+	height: 1px;
+	position: absolute;
+	white-space:nowrap;
+}
+
+#controlendtime
+{
+	left: 778px;
+	top: 279px;
+	width: 200px;
+	height: 1px;
+	position: absolute;
+	white-space:nowrap;
+	text-align:right;
+}
+
+#manualDisabled, .manualEnabled
+{
+	position:absolute;
+	left: 696px;
+	top: 421px;
+	width:140px;
+	height:47px;
+	background-repeat: no-repeat;
+}
+
+#manualDisabled
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Manual Enabled.gif");
+	visibility:visible;
+}
+
+.manualEnabled
+{	
+	cursor:pointer;	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Manual Disabled.gif");
+}
+
+.scheduleEnabled, #scheduleDisabled
+{
+	position:absolute;
+	left: 843px;
+	top: 421px;
+	width:140px;
+	height:47px;	
+	background-repeat: no-repeat;
+}
+
+.scheduleEnabled
+{	
+	cursor:pointer;	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Schedule Disabled.gif");	
+}
+
+#scheduleDisabled
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Schedule Enabled.gif");	
+	visibility:visible;
+}
+
+.divseek
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Control/Seek Enabled.gif");
+}
+
+#seekDisabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Control/Seek Disabled.gif");		
+}
+
+.text
+{
+	text-align:right;
+	white-space:nowrap;
+}
+
+.value
+{
+    padding-left:20px;	
+	text-align:left;
+	white-space:nowrap;
+}
+
+.Shows
+{
+	top: 478px;
+	left: 700px;	
+	width:250px;
+	position: absolute;
+	z-index:1000;
+}
+
+.controlShowLabel
+{
+    position:relative;
+}
+
+.countUpDown, .controlDurationUpDownButton, .controlDurationUpDownButton-hover
+{
+	height:18px;
+	width:24px;	
+	border:solid 0px transparent;
+	cursor:default;	
+}
+
+.prevEvent, .nextEvent
+{
+	cursor:default;
+}
+
+.btnprevEvent
+{
+	left: 105px;
+	top: 329px;
+	position: absolute;
+	height:69px;
+	width:15px;
+	z-index:1;
+	background-color:#EDF1F9;
+}
+
+.btnnextEvent
+{
+	left: 963px;
+	top:329px;
+	height: 69px;
+	position: absolute;
+	width:15px;
+	background-color:#EDF1F9;	
+}
+
+.flatBorder, .btnnextEvent, .btnprevEvent
+{
+	border-collapse:collapse;
+	border-bottom:solid 1px #5C84B8;
+	border-top:solid 1px #5C84B8;
+	border-right:solid 1px #5C84B8;
+	border-left:solid 1px #5C84B8;	
+}
+
+.prevnext, .btnnextEvent, .btnprevEvent
+{
+	font-family:Tahoma, Arial, sans-serif;
+    font-size:12pt;        
+    font-weight:bold;
+    line-height:5pt;	
+	padding-left:0px;
+	display:none;	
+}
+
+.progressPointer
+{
+	position:absolute;
+	top:250px;
+	left:101px;	
+	z-index:1;	
+}
+
+.progressPointerLine
+{
+	width:1px;
+	height:15px;
+	position:absolute;
+	top:258px;
+	left:105px;
+	z-index:1;		
+}
+
+.seekProgress
+{
+	left: 105px;
+	width: 877px;
+	top: 257px;
+	height: 16px;
+	position: absolute;
+	background-color:#5C84B8;
+	filter:alpha(opacity=30);
+	opacity:0.3;
+}
+
+.centerPart
+{
+    position:absolute; 
+    left: 414px; 
+    top: 428px; 
+}
+
+.playTypeLabel
+{
+    position:absolute;
+    top:45px;
+    width:100px;
+}
+
+.event, .selectedEvent, .currentEvent
+{
+	top: 0px;
+	height: 65px;
+	position: absolute;		
+	overflow: hidden;
+	
+}
+
+.playValidation
+{
+	position:absolute; 
+	left:699px; 
+	top: 564px;	
+}
+
+.validationFailedText
+{
+    font-size: 17px;
+	font-family: Trebuchet MS ; 	
+	white-space: nowrap;
+}
+
+.validationShowerText
+{
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:10pt;
+    cursor:pointer;
+}
+

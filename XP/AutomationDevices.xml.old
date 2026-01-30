@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Devices xmlns="http://schemas.qubecinema.com/Automation/Devices/2008-01-26">
+
+    <!--true,false-To enable Barco automation through TCP,make enable=true-->
+    <Device name="Barco" class="Qube.Automation.Barco.TCP, Barco" enable="false">
+
+        <Configuration>
+            <Key name="File" value="Barco.dll"/>
+            <Key name="Address" value="192.168.5.221"/>
+            <!--Barco Projector IP-->
+
+            <!--Use port 43680 for series I projectors and port 43728 for series II projectors -->
+            <Key name="Port" value="43680"/>
+            <Key name="KeepAlive" value ="OFF"/>
+        </Configuration>
+
+    </Device>
+
+    <!--true,false-To enable NEC automation through TCP,make enable=true-->
+    <Device name="Nec" class="Qube.Automation.NEC.TCP, NEC" enable="false">
+        <Configuration>
+            <Key name="File" value="NEC.dll"/>
+            <Key name="Address" value="192.168.5.164"/>
+            <!--NEC Projector IP-->
+
+            <!--Use port 7142 for series I projectors and port 43728 for series II projectors -->
+            <Key name="Port" value="7142"/>
+            <Key name="KeepAlive" value ="OFF"/>
+            <!--ON,OFF-->
+        </Configuration>
+    </Device>
+
+    <!--true,false-To enable Christie automation through TCP,make enable=true-->
+    <Device name="Christie" class="Qube.Automation.Christie.TCP, Christie" enable="false">
+        <Configuration>
+            <Key name="File" value="Christie.dll"/>
+            <Key name="Address" value="192.168.5.154"/>
+            <!--Christie Projector IP-->
+
+            <!--Use port 5000 for both series I projectors and series II projectors -->
+            <Key name="Port" value="5000"/>
+            <Key name="KeepAlive" value ="OFF"/>
+        </Configuration>
+        <Init>
+            <Parameter name="UserName" value="user" />
+            <!--Enter the Username,Password of Christie-->
+            <Parameter name="Password" value="passwd"/>
+        </Init>
+    </Device>
+
+    <!--true,false-To enable JNIOR automation, make enable=true-->
+    <Device name="JNIOR" class="Qube.Automation.JNIOR.TCP, JNIOR" enable="false">
+        <Configuration>
+            <Key name="Address" value="192.168.4.170"/>
+            <Key name="UserName" value="jnior"/>
+            <Key name="Password" value="jnior"/>
+        </Configuration>
+    </Device>
+
+
+    <!--true,false-To enable Elexol automation through GPO,make enable=true-->
+    <Device name="Elexol" class="Qube.Automation.Elexol.Serial, Elexol" enable="false">
+        <Configuration>
+            <Key name="File" value="Elexol.dll" />
+            <Key name="Settings" value="COM6,9600,n,8,1" />
+            <!--Port settings in which Elexol is configured-->
+
+            <!--PortA, PortB - Use this to confgure the pins of the corresponding port as either Input or Output -->
+
+            <!--DefaultOutputStateA, DefaultOutputStateB => 
+        Use this to set default states for the output pins in the corresponding ports
+        Possible values are ON, OFF and CURRENT
+        ON, and OFF will set the state of the corresponding pin to ON or OFF, 
+        CURRENT will maintain the current state of the corresponding pin -->
+
+            <!-- For 8 I/O use the below 2 Keys and make sure the 4 I/O Keys are commented-->
+            <Key name="PortA" value="I,I,I,I,I,I,I,I" />
+            <!--I, O-->
+            <Key name="DefaultOutputStateA" value="NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL"/>
+            <!--ON,OFF,CURRENT-->
+
+            <!-- For 4 I/O use the below 2 Keys and make saure the 8 I/O Keys are commented-->
+            <!--
+      <Key name="PortA" value="I,I,I,I,O,O,O,O" />
+      <Key name="DefaultOutputStateA" value="NULL,NULL,NULL,NULL,OFF,OFF,OFF,OFF"/>
+      -->
+
+            <Key name="PortB" value="O,O,O,O,O,O,O,O" />
+            <Key name="DefaultOutputStateB" value="OFF,OFF,OFF,OFF,OFF,OFF,OFF,OFF"/>
+
+            <Key name="DevicePollPeriod" value="100"/>
+            <!--in milliseconds-->
+
+        </Configuration>
+    </Device>
+
+    <Device name="Me" class="Qube.Automation.SMS, pe" enable="true"/>
+
+</Devices>

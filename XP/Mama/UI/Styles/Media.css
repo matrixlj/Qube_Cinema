@@ -1,0 +1,265 @@
+.divmedia
+{
+	width:928px;
+	height:390px;	
+	position:absolute;
+	top:90px;
+	left:28px;
+	padding:10px;
+	z-index:100;
+}
+
+.tblmediaInfo
+{
+	top:0px;
+	left:1px;
+	width:910px;
+	display:none;
+}
+
+#tblHeaderRow th
+{
+    border-collapse:collapse;
+	border-bottom:solid 1px white;
+	border-top:solid 1px white;
+	border-left:solid 1px white;
+	border-right:solid 0px white;
+}
+
+.tblmediaInfo td, .tblmediaInfo th
+{
+	border-collapse:collapse;
+	border-bottom:solid 0px white;
+	border-top:solid 1px white;
+	border-left:solid 0px white;
+	border-right:solid 0px white;	
+}
+
+.tblmediaInfo, .divmediaInfo, .tblmediaInfoHeader, .emptyScreen
+{	
+	background-color:White;			
+	z-index:100;	
+	position:absolute;	
+}
+
+.divmediaInfo, .emptyScreen
+{	
+	overflow:scroll;
+	overflow-x:hidden;
+	top:10px;
+	left:10px;
+	width: 928px;
+	height:390px;
+}
+
+.divmediaInfoHeader
+{
+	top:10px;
+	left:10px;	
+	width:928px;
+	background-color:#D3CFC7;		
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.divmediaInfoHeader #tblHeaderRow
+{
+    width:910px;
+}
+
+.tblmediaInfo td, th
+{
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.divmediastorage
+{
+	top:510px; 
+	position:absolute; 
+	left:27px;
+}
+
+.divmediastorage td
+{
+	padding-right:5px;	
+}
+
+.mediainfoHeader
+{
+	color:Black;
+	background-color:#D3CFC7;	
+	text-align:center;
+	white-space:nowrap;	
+}
+
+.mediaTitleName
+{
+	color:#333333;
+	overflow:hidden;
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	text-align:left;
+	width:150px;
+}
+
+.mediaInfo
+{	
+	text-align:center;
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	line-height: 18px;
+	color:Black;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.mediaAvailableStorageBar
+{
+	position:absolute;	
+	top:3px;
+}
+
+.divprogressbar
+{	
+	width:350px; 
+	height:35px;
+}
+
+.divmediastorage td, .tblmediaInfo td, .divmediaControls td
+{
+	white-space:nowrap;
+}
+
+.titleInplace
+{
+	color: orange;	
+}
+
+.autoDeleteTitle, .modalPopupTitle
+{
+	color:Black;
+	height:20px;
+	width:317px;
+	left:3px;
+	top:3px;
+}
+
+.dateextnd
+{
+	z-index:1000;
+}
+
+#headerTitle
+{
+	width:167px;
+}
+
+.integrityProgress
+{
+	width:0px;
+    height:17px;    
+    left:46px;
+    position:absolute;
+    filter:alpha(opacity=50);
+    opacity:0.5;        
+    padding-top:2px;
+}
+
+.mediaSelectedRow
+{
+	background-color:#F7DFA8;
+}
+
+.divmediaControls
+{
+	position:absolute;
+	top:513px;
+	left:530px;
+	width:455px;
+	height:35px;
+}
+
+.divmediaControls .tblmediaControls
+{
+	border-collapse:collapse;
+	border: solid 0px #B3CAE4;
+	width:455px;
+	height:35px;
+}
+
+.tblmediaControls table td
+{
+	padding-right:5px;
+}
+
+.mediaDelete
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Delete Enabled.gif");
+	cursor:pointer;
+}
+
+.mediaAutoDelete
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/logs/GetEnable.gif");
+	cursor:pointer;	
+}
+
+.mediaVerify
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Save Enabled.gif");
+	cursor:pointer;
+}
+
+.mediaVerifyDisabled
+{
+    background-image:url("../res/Skins/#SKINCOLOUR#/Common/Save Disabled.gif");    
+}
+
+.mediaVerifyDisabled span
+{
+    color:Gray;
+}
+
+.emptyScreen
+{
+    top:10px;
+    z-index:110;
+    overflow:hidden;
+}
+
+.divmediaInfoHeader .mediainfoHeader
+{
+    position:absolute;
+    z-index:109;
+}
+
+#txtSearch
+{
+    height:14px;
+}
+
+.searchBox
+{
+    position:absolute;
+    top:66px;
+    left:628px;
+    width:348px;
+}
+
+.searchBox table
+{
+    float:right;
+}
+
+.searchBox input[type=text]
+{
+    margin:0px;
+}
+
+.atmos-logo
+{
+    background-image: url("../res/Skins/#SKINCOLOUR#/Media/atmos_94x15.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+}

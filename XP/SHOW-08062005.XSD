@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://www.real-image.com/QUBE-SHOW-08062005#" elementFormDefault="qualified"
+	attributeFormDefault="unqualified" xmlns:show="http://www.real-image.com/QUBE-SHOW-08062005#"
+	xmlns:pl="http://www.real-image.com/QUBE-PLAYLIST-07062005#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <xs:import namespace="http://www.real-image.com/QUBE-PLAYLIST-07062005#" schemaLocation="PLAYLIST-07062005.XSD" />
+    <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd" />
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd" />
+    <xs:element name="Show" type="show:ShowType" />
+    <xs:complexType name="ShowType">
+        <xs:complexContent>
+            <xs:extension base="pl:GenericPlaylist" />
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>

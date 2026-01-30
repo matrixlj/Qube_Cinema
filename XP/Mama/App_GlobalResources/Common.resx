@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adsSpaceLessThanUsedSpace" xml:space="preserve">
+    <value>The specified quota cannot be saved, as the newly calculated quota for advertisements type is less than the total space used by it</value>
+  </data>
+  <data name="advertisement" xml:space="preserve">
+    <value>advertisements</value>
+  </data>
+  <data name="cannotDeleteTitle" xml:space="preserve">
+    <value>Can not delete title</value>
+  </data>
+  <data name="cannotScheduleAnEventInThePast" xml:space="preserve">
+    <value>Cannot schedule an event in the past!</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>category</value>
+  </data>
+  <data name="completedAt" xml:space="preserve">
+    <value>completed at</value>
+  </data>
+  <data name="computer" xml:space="preserve">
+    <value>computer</value>
+  </data>
+  <data name="cue" xml:space="preserve">
+    <value>cue</value>
+  </data>
+  <data name="cueFailedSince" xml:space="preserve">
+    <value>Cue failed since</value>
+  </data>
+  <data name="dalapathiNotFound" xml:space="preserve">
+    <value>Unable to connect PE</value>
+  </data>
+  <data name="dcpEntityServiceProviderNotFound" xml:space="preserve">
+    <value>dcpentityserviceprovider not found</value>
+  </data>
+  <data name="invalidPath" xml:space="preserve">
+    <value>Invalid path</value>
+  </data>
+  <data name="displayRows" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="downloadLog" xml:space="preserve">
+    <value>download log</value>
+  </data>
+  <data name="eitherNameOrPathIsInvalid" xml:space="preserve">
+    <value>Either name or path is invalid</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>enter path short name</value>
+  </data>
+  <data name="eventId" xml:space="preserve">
+    <value>event</value>
+  </data>
+  <data name="features" xml:space="preserve">
+    <value>features</value>
+  </data>
+  <data name="fourProjectors" xml:space="preserve">
+    <value>four projectors</value>
+  </data>
+  <data name="get" xml:space="preserve">
+    <value>get</value>
+  </data>
+  <data name="getKey" xml:space="preserve">
+    <value>get key</value>
+  </data>
+  <data name="givenPlaylistIsNotPlayable" xml:space="preserve">
+    <value>Given playlist is not playable</value>
+  </data>
+  <data name="ingest" xml:space="preserve">
+    <value>ingest</value>
+  </data>
+  <data name="track" xml:space="preserve">
+    <value>track</value>
+  </data>
+  <data name="titleTrack" xml:space="preserve">
+    <value>title track</value>
+  </data>
+  <data name="ingestedAt" xml:space="preserve">
+    <value>ingested at</value>
+  </data>
+  <data name="invalidAssetType" xml:space="preserve">
+    <value>Invalid asset type</value>
+  </data>
+  <data name="invalidDatetime" xml:space="preserve">
+    <value>Invalid datetime</value>
+  </data>
+  <data name="invalidEvent" xml:space="preserve">
+    <value>Invalid event</value>
+  </data>
+  <data name="invalidEventId" xml:space="preserve">
+    <value>Invalid event id</value>
+  </data>
+  <data name="invalidIpAddress" xml:space="preserve">
+    <value>Invalid ip address</value>
+  </data>
+  <data name="invalidJobIds" xml:space="preserve">
+    <value>Invalid jobIds</value>
+  </data>
+  <data name="invalidKeyPath" xml:space="preserve">
+    <value>Invalid key path</value>
+  </data>
+  <data name="invalidKeys" xml:space="preserve">
+    <value>Invalid keys</value>
+  </data>
+  <data name="invalidPlaylist" xml:space="preserve">
+    <value>Invalid playlist</value>
+  </data>
+  <data name="invalidPlaylistId" xml:space="preserve">
+    <value>Invalid playlist id</value>
+  </data>
+  <data name="invalidScheduleUUID" xml:space="preserve">
+    <value>Invalid schedule UUID</value>
+  </data>
+  <data name="invalidShow" xml:space="preserve">
+    <value>Invalid show</value>
+  </data>
+  <data name="invalidShowId" xml:space="preserve">
+    <value>Invalid show id</value>
+  </data>
+  <data name="invalidShowName" xml:space="preserve">
+    <value>Invalid show name</value>
+  </data>
+  <data name="invalidTitle" xml:space="preserve">
+    <value>Invalid title</value>
+  </data>
+  <data name="invalidTrack" xml:space="preserve">
+    <value>Invalid track</value>
+  </data>
+  <data name="invalidTrackId" xml:space="preserve">
+    <value>Invalid track id</value>
+  </data>
+  <data name="invalidTransferUUID" xml:space="preserve">
+    <value>Invalid transfer UUID</value>
+  </data>
+  <data name="invalidURI" xml:space="preserve">
+    <value>Invalid URI</value>
+  </data>
+  <data name="invalidUUIDFormat" xml:space="preserve">
+    <value>Invalid UUID format</value>
+  </data>
+  <data name="kdm" xml:space="preserve">
+    <value>kdm</value>
+  </data>
+  <data name="keyInfoProviderNotFound" xml:space="preserve">
+    <value>keyinfoprovider not found</value>
+  </data>
+  <data name="loadShowFailed" xml:space="preserve">
+    <value>Load show failed</value>
+  </data>
+  <data name="mediaFolderUsedSpaceLargerThanSpecifiedQuota" xml:space="preserve">
+    <value>The specified quota ({0:0.####} MB) cannot be saved, as it is less than the total used space ({1:0.####} MB)</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>message</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="namedIngestSelect" xml:space="preserve">
+    <value>select named space</value>
+  </data>
+  <data name="namedspace" xml:space="preserve">
+    <value>namedspace</value>
+  </data>
+  <data name="namedspaceIdIsNull" xml:space="preserve">
+    <value>named space id is null</value>
+  </data>
+  <data name="novalidIngestableTitles" xml:space="preserve">
+    <value>no valid ingestable titles</value>
+  </data>
+  <data name="objectNotFound" xml:space="preserve">
+    <value>{0} not found for the given id {1}</value>
+  </data>
+  <data name="others" xml:space="preserve">
+    <value>others</value>
+  </data>
+  <data name="pauseFailedSince" xml:space="preserve">
+    <value>Pause failed since</value>
+  </data>
+  <data name="play" xml:space="preserve">
+    <value>play</value>
+  </data>
+  <data name="playFailedSince" xml:space="preserve">
+    <value>Play failed since</value>
+  </data>
+  <data name="playlists" xml:space="preserve">
+    <value>playlists</value>
+  </data>
+  <data name="playlist" xml:space="preserve">
+    <value>playlist</value>
+  </data>
+  <data name="schedule" xml:space="preserve">
+    <value>schedule</value>
+  </data>
+  <data name="evnt" xml:space="preserve">
+    <value>event</value>
+  </data>
+  <data name="pleaseSelectASignalFormat" xml:space="preserve">
+    <value>please select a signal format</value>
+  </data>
+  <data name="pleaseSelectNumberOfProjectors" xml:space="preserve">
+    <value>please select number of projectors</value>
+  </data>
+  <data name="projector1Tab" xml:space="preserve">
+    <value>projector 1</value>
+  </data>
+  <data name="projector2Tab" xml:space="preserve">
+    <value>projector 2</value>
+  </data>
+  <data name="projector3Tab" xml:space="preserve">
+    <value>projector 3</value>
+  </data>
+  <data name="projector4Tab" xml:space="preserve">
+    <value>projector 4</value>
+  </data>
+  <data name="qube" xml:space="preserve">
+    <value>qube</value>
+  </data>
+  <data name="referredInShow" xml:space="preserve">
+    <value>Can not delete title since it is referred in show</value>
+  </data>
+  <data name="resumeshowFailedSince" xml:space="preserve">
+    <value>Resumeshow failed since</value>
+  </data>
+  <data name="selectProjector" xml:space="preserve">
+    <value>select projector</value>
+  </data>
+  <data name="selectResolution" xml:space="preserve">
+    <value>select resolution</value>
+  </data>
+  <data name="selectShow" xml:space="preserve">
+    <value>select show</value>
+  </data>
+  <data name="selectShow2LoadOrResume" xml:space="preserve">
+    <value>select show to load or resume</value>
+  </data>
+  <data name="selectShow2Modify" xml:space="preserve">
+    <value>select show to modify</value>
+  </data>
+  <data name="selectTimeZone" xml:space="preserve">
+    <value>select time zone</value>
+  </data>
+  <data name="serverTimeIs" xml:space="preserve">
+    <value>since server time is</value>
+  </data>
+  <data name="shorts" xml:space="preserve">
+    <value>shorts</value>
+  </data>
+  <data name="show" xml:space="preserve">
+    <value>show</value>
+  </data>
+  <data name="showDrag" xml:space="preserve">
+    <value>select show to schedule</value>
+  </data>
+  <data name="showIdIsNull" xml:space="preserve">
+    <value>Show id is null</value>
+  </data>
+  <data name="showNameAlreadyExists" xml:space="preserve">
+    <value>Show name already exists</value>
+  </data>
+  <data name="showNameIsNull" xml:space="preserve">
+    <value>Show name is null</value>
+  </data>
+  <data name="singleProjector" xml:space="preserve">
+    <value>single projector</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>source</value>
+  </data>
+  <data name="startedAt" xml:space="preserve">
+    <value>started at</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>status</value>
+  </data>
+  <data name="stopFailedSince" xml:space="preserve">
+    <value>Stop failed since</value>
+  </data>
+  <data name="stoppedAt" xml:space="preserve">
+    <value>stopped at</value>
+  </data>
+  <data name="system" xml:space="preserve">
+    <value>system</value>
+  </data>
+  <data name="timeNotAvailabe" xml:space="preserve">
+    <value>Show can not be scheduled. Since another show is scheduled on the same time</value>
+  </data>
+  <data name="timeWritten" xml:space="preserve">
+    <value>time written</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>title</value>
+  </data>
+  <data name="titleInfoProviderNotFound" xml:space="preserve">
+    <value>titleinfoprovider not found</value>
+  </data>
+  <data name="trailer" xml:space="preserve">
+    <value>trailers</value>
+  </data>
+  <data name="twoProjectors" xml:space="preserve">
+    <value>two projectors</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>type</value>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>user name</value>
+  </data>
+  <data name="usherNotFound" xml:space="preserve">
+    <value>Usher not found</value>
+  </data>
+  <data name="velaikaranServiceNotAvailable" xml:space="preserve">
+    <value>Velaikaran service not available</value>
+  </data>
+  <data name="wait" xml:space="preserve">
+    <value>wait</value>
+  </data>
+  <data name="assetNotAvailable" xml:space="preserve">
+    <value>{0} not available for the given assetUUID ({1}) in the given URI {2}</value>
+  </data>
+  <data name="commercial" xml:space="preserve">
+    <value>commercial</value>
+  </data>
+  <data name="playType" xml:space="preserve">
+    <value>play type</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="property" xml:space="preserve">
+    <value>property</value>
+  </data>
+  <data name="featureInfoProviderNotFound" xml:space="preserve">
+    <value>featureinfoprovider not found</value>
+  </data>
+  <data name="mediafolderAlreadyExists" xml:space="preserve">
+    <value>Media folder already exists</value>
+  </data>
+  <data name="invalidMediaFolderPath" xml:space="preserve">
+    <value>The specified media folder path is invalid</value>
+  </data>
+  <data name="feature" xml:space="preserve">
+    <value>feature</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>general</value>
+  </data>
+  <data name="mediaManagement" xml:space="preserve">
+    <value>media management</value>
+  </data>
+  <data name="projector" xml:space="preserve">
+    <value>projector</value>
+  </data>
+  <data name="timecode" xml:space="preserve">
+    <value>timecode</value>
+  </data>
+  <data name="invalidKeyEssence" xml:space="preserve">
+    <value>Either key essence is null or empty</value>
+  </data>
+  <data name="NullOrEmptyItem" xml:space="preserve">
+    <value>{0} is null or empty</value>
+  </data>
+  <data name="securityLogErrorMsg" xml:space="preserve">
+    <value>Playout not started due to projector's security log warning/error, please try again after sometime.</value>
+  </data>
+  <data name="unsupportedMediaFolder" xml:space="preserve">
+    <value>The specified media folder path is not supported.&lt;br&gt;Please enter a valid path.</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="unableToDeleteKdmSinceUsedInCurrentLoadedPlaylist" xml:space="preserve">
+    <value>Unable to delete kdm. Since it is used in currently loaded playlist</value>
+  </data>
+  <data name="security" xml:space="preserve">
+    <value>security</value>
+  </data>
+  <data name="atmos" xml:space="preserve">
+    <value>atmos</value>
+  </data>
+  <data name="soundProcessor" xml:space="preserve">
+    <value>sound processor</value>
+  </data>
+</root>

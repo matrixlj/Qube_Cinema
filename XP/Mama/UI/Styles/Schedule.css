@@ -1,0 +1,75 @@
+﻿.dateRange
+{
+	top:4px;
+	left:0px;
+	width:278px;	
+}
+
+.scheduleShowLabel
+{	
+	width:235px;
+	position: relative;		
+}
+
+.startDate
+{
+	width:140px;
+}
+
+.calendarImg
+{
+	left:215px;
+	top:80px;			
+	position: absolute;		
+}
+
+.startTime
+{
+	width:140px;	
+}
+
+.gotoDate
+{	
+	width: 80px;
+	height: 16px;	
+}
+
+.watermarkGotoDate
+{
+	left: 80px; 
+	top: 2px; 
+	width: 80px;
+	height: 14px;
+	position:absolute;
+	color:Gray;
+}
+
+.scheduleModalPopup td
+{
+	padding-bottom:10px;
+	padding-right:5px;	
+}
+
+.tblDragShowLabel
+{
+	position: absolute;
+	left: 20px;
+	top: 130px;	
+	width: 250px;
+	height:50px;
+}
+
+.dpcalendar
+{
+	cursor:pointer;	
+}
+
+.dragShow
+{
+	width:220px;
+	top:180px;
+	left:20px;
+	height:325px;
+	position:absolute;
+	z-index:1;
+}

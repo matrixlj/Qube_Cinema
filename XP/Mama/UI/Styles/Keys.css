@@ -1,0 +1,419 @@
+﻿#keys
+{
+	font-family: Trebuchet MS ; 
+	font-size: 26px; 
+	line-height: 32px; 
+	color: #FFF;
+	left: 67px; 
+	top: 80px;
+	width: 50px; 
+	height: 32px;
+	background-repeat: no-repeat;
+	position:absolute;
+}
+
+#status
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	left: 46px; 
+	top: 123px;
+	width: 38px; 
+	height: 20px;
+	background-repeat: no-repeat;
+	position:absolute;
+}
+
+.keysSelectAll
+{
+	position:absolute;
+	left: 118px;
+	top:123px;
+}
+
+#composition
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	left: 155px; 
+	top: 123px;
+	width: 82px; 
+	height: 20px;
+	background-repeat: no-repeat;
+	position:absolute;
+}
+
+#startdate
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	left: 598px; 
+	top: 123px;
+	width: 85px; 
+	height: 20px;
+	background-repeat: no-repeat;
+	position:absolute;
+}
+
+#enddate
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	left: 795px; 
+	top: 123px;
+	width: 85px; 
+	height: 20px;
+	background-repeat: no-repeat;
+	position:absolute;
+}
+
+.divaddkey
+{
+    width:111px;
+    height:32px;
+	left: 23px;
+	top: 374px;
+	position:absolute;
+	background-image:url(../res/Skins/#SKINCOLOUR#/keys/Addkey.gif);
+	background-repeat:no-repeat;			
+}
+
+.statusImgs
+{
+	left: 300px; 
+	top: 376px;
+	width:680px;
+	position:absolute;
+}
+
+#valid
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	height: 20px;
+	background-repeat: no-repeat;	
+}
+
+#validInFuture
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	width:auto;
+	height: 20px;
+	background-repeat: no-repeat;	
+}
+
+#expired
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	width:auto;
+	height: 20px;
+	background-repeat: no-repeat;
+}
+
+#noKey
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	width:auto;
+	height: 20px;
+	background-repeat: no-repeat;
+}
+
+#addKeyDiv
+{
+	top: 420px;
+	height: 160px;
+	left: 26px;
+	position: absolute;
+	display:none;
+}
+
+#addedKeysDiv
+{	
+	overflow: scroll;
+	overflow-x:hidden;
+	position: absolute;
+	float: left;
+	left: 37px;
+	width: 932px;
+	top: 155px;
+	height: 202px;
+	background-color:White;
+}
+
+#addedKeysTable
+{
+	left: 0px;
+	width: 915px;
+	top: 0px;
+	position:relative; 
+}
+
+#addedKeysTable td
+{
+	border-collapse:collapse;
+	border-bottom:solid 1px white;
+	border-top:solid 0px white;
+	border-left:solid 0px white;
+	border-right:solid 1px white;
+}	
+
+#KDM
+{
+	 position: absolute;
+	 left: 16px;
+	 top: 13px;
+}
+
+#URL
+{
+	 position: absolute;
+	 left: 145px;
+	 top: 29px;
+}
+
+.titleName
+{
+	color: gray;
+	vertical-align: middle;
+	text-align: left;
+	overflow: hidden; 
+	width:340px; 
+	float:left; 
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 	
+	font-weight:bold;
+	
+}	        
+
+.keysStartDate
+{
+	color: gray;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden; 
+	width:160px; 
+	float:left; 
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 	
+	font-weight:bold;
+}
+
+.keysEndDate
+{
+	color: gray;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden; 
+	width:160px; 
+	float:left; 
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 	
+	font-weight:bold;
+}
+
+.keysList
+{
+	position:absolute;
+	position:relative;
+	bottom:3px;	
+}
+
+.allKeys
+{
+	font-weight:bold;
+	color: Black;	
+	margin-left:5px;
+	position:relative;
+	bottom:3px;	
+}
+
+.cell
+{	
+	vertical-align:top;
+	text-align:left;	
+}
+
+.allKeysCell
+{
+	vertical-align:top;
+}
+
+.rowStyleKeys
+{
+	height:15;
+}
+
+.keys
+{
+	margin-left:5px;
+}
+
+.check
+{
+	cursor:pointer;		
+}
+
+.keysCheck
+{
+	cursor:pointer;
+	margin-left:18px;
+}
+
+.keysUserName
+{
+	width: 159px;
+	color:Black;
+}
+
+.keysWatermarkUserName
+{
+	width: 159px;
+	color:Gray;
+}
+
+.keysPassword
+{
+	width: 159px; 
+	color:Black;
+}
+
+.keyPath
+{
+	width: 320px;
+	height: 16px;
+	color:black;
+}
+
+.watermarkKeyPath
+{		
+	width: 320px;
+	height: 16px;
+	color:Gray;
+	font-weight:normal;
+}
+
+.divkeydelete
+{
+	position:absolute;
+	left: 142px;
+	top: 372px;
+	background-repeat: no-repeat;
+	display: none;	
+}
+
+.divkeydeleteEnabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Delete Enabled.gif");
+}
+
+.download
+{
+    text-align: right;
+	left: 300px;
+	top: 80px;
+	height:20px;
+	width:680px;
+	position:absolute;
+	padding-right:5px;
+}
+
+.download a
+{
+    text-decoration: underline;
+}
+
+.keyupload
+{
+	display:none;
+	width:322px;
+}
+
+.deleteKeyDisabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Delete Disabled.gif");
+}
+
+#keysBg label, .statusImgs td
+{
+	white-space:nowrap;
+}
+
+.saveNamedSpace
+{
+	padding-top:2px;
+}
+
+.divkeyget
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Keys/GetKey.gif");
+	background-repeat:no-repeat;
+}
+
+.getKeyButtonSize
+{
+    width:126px;
+    height:32px;
+}
+
+.cert-type
+{
+    margin-top:7px;
+    text-align: left;
+    color:Black;
+    background: #ffffff;
+    width: 100px;
+    border: solid 1px black;
+    padding: 5px 7px 5px 7px;
+    position:absolute;
+    right:0px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .7), inset 0px -1px 2px rgba(55, 55, 55, .7);
+}
+
+.cert-type:before
+{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 12px solid transparent;
+    border-bottom-color: #ffffff;
+
+    left: 70px;
+    top: -22px;
+
+    /*-webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(0deg);*/
+
+    z-index: 1px;
+}
+
+.cert-type a
+{
+    color:Black;
+    width: 70px;
+    margin: 5px 0px 5px 0px;
+}

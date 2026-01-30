@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Cues xmlns="http://schemas.qubecinema.com/Automation/Cues/2008-01-26">
+
+    <Cue name="shutter open">
+        <Actions>
+            <InvokeMethod name="ShutterOpen" device="Barco"/>
+            <InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="ShutterOpen" device="NEC"/>
+        </Actions>
+    </Cue>
+
+    <Cue name="shutter close">
+        <Actions>
+            <InvokeMethod name="ShutterClose" device="Barco"/>
+            <InvokeMethod name="ShutterClose" device="Christie"/>
+            <InvokeMethod name="ShutterClose" device="NEC"/>
+        </Actions>
+    </Cue>
+
+    <Cue name="Lamp ON">
+        <Actions>
+            <InvokeMethod name="ShutterClose" device="Barco"/>
+            <InvokeMethod name="ShutterClose" device="Christie"/>
+            <InvokeMethod name="ShutterClose" device="NEC"/>
+            <InvokeMethod name="Pause" device="Me"/>
+
+            <InvokeMethod name="LampOn" device="Barco"/>
+            <InvokeMethod name="LampOn" device="Christie"/>
+            <InvokeMethod name="LampOn" device="NEC"/>
+
+            <Sleep duration="5" />
+
+            <InvokeMethod name="Play" device="Me"/>
+            <InvokeMethod name="ShutterOpen" device="Barco"/>
+            <InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="ShutterOpen" device="NEC"/>
+
+        </Actions>
+    </Cue>
+
+    <Cue name="Lamp OFF">
+        <Actions>
+            <InvokeMethod name="LampOff" device="Barco"/>
+            <InvokeMethod name="LampOff" device="Christie"/>
+            <InvokeMethod name="LampOff" device="NEC"/>
+        </Actions>
+    </Cue>
+
+    <!--
+  During execution of channel switch cue(s) below the following actions are performed : 
+  1. The projector's shutter is closed.
+  2. The playback is paused.
+  3. The channel swithc command is executed.
+  4. The shutter is opened, and
+  5. The playback is continued. 
+   -->
+    <Cue name="J2K SCOPE">
+        <Actions>
+            <InvokeMethod name="ShutterClose" device="Barco"/>
+            <InvokeMethod name="ShutterClose" device="Christie"/>
+            <InvokeMethod name="ShutterClose" device="NEC"/>
+            <InvokeMethod name="Pause" device="Me"/>
+
+            <!--
+    MacroName parameter specifies the name of the macro to be executed in a barco projector.
+    Check the projector configuration to get the exact value to be used.
+    -->
+            <InvokeMethod name="ExecuteMacro" device="Barco">
+                <Parameter name="MacroName" value="DCDM_XYZ_SCOPE_A_B"/>
+            </InvokeMethod>
+
+            <!--
+    Channel parameter specifies the channel number to be switched in a christie projector.
+    Its value can be 100 to 109,where the numbers 0 to 9 is the channel number that can be seen in projector configuration.
+    This number should be used with prefix 10.
+    Check the projector configuration to get exact value to be used. 
+    -->
+            <InvokeMethod name="SwitchChannel" device="Christie">
+                <Parameter name="Channel" value="102"/>
+            </InvokeMethod>
+
+            <!--
+      MacroKey parameter specifies the input number to be switched in the NEC projector.
+      Check the projector configuration to get the exact value to be used.
+    -->
+            <InvokeMethod name="SwitchInput" device="NEC">
+                <Parameter name="MacroKey" value="0"/>
+            </InvokeMethod>
+
+            <Sleep duration="3" />
+
+            <InvokeMethod name="ShutterOpen" device="Barco"/>
+            <InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="ShutterOpen" device="NEC"/>
+
+            <InvokeMethod name="Play" device="Me"/>
+        </Actions>
+    </Cue>
+
+    <Cue name="J2K FLAT">
+        <Actions>
+            <InvokeMethod name="ShutterClose" device="Barco"/>
+            <InvokeMethod name="ShutterClose" device="Christie"/>
+            <InvokeMethod name="ShutterClose" device="NEC"/>
+            <InvokeMethod name="Pause" device="Me"/>
+
+            <InvokeMethod name="ExecuteMacro" device="Barco">
+                <Parameter name="MacroName" value="DCDM_XYZ_FLAT_A_B"/>
+            </InvokeMethod>
+
+            <InvokeMethod name="SwitchChannel" device="Christie">
+                <Parameter name="Channel" value="101"/>
+            </InvokeMethod>
+
+            <InvokeMethod name="SwitchInput" device="NEC">
+                <Parameter name="MacroKey" value="0"/>
+            </InvokeMethod>
+
+            <Sleep duration="3" />
+            <InvokeMethod name="ShutterOpen" device="Barco"/>
+            <InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="ShutterOpen" device="NEC"/>
+            <InvokeMethod name="Play" device="Me"/>
+
+        </Actions>
+    </Cue>
+
+    <Cue name="MPEG (Pre-Show)">
+        <Actions>
+            <InvokeMethod name="ShutterClose" device="Barco"/>
+            <InvokeMethod name="ShutterClose" device="Christie"/>
+            <InvokeMethod name="ShutterClose" device="NEC"/>
+            <InvokeMethod name="Pause" device="Me"/>
+
+            <InvokeMethod name="ExecuteMacro" device="Barco">
+                <Parameter name="MacroName" value="DCDM_XYZ_SCOPE_A_B"/>
+            </InvokeMethod>
+
+            <InvokeMethod name="SwitchChannel" device="Christie">
+                <Parameter name="Channel" value="127"/>
+            </InvokeMethod>
+
+            <InvokeMethod name="SwitchInput" device="NEC">
+                <Parameter name="MacroKey" value="0"/>
+            </InvokeMethod>
+
+            <Sleep duration="3" />
+            <InvokeMethod name="ShutterOpen" device="Barco"/>
+            <InvokeMethod name="ShutterOpen" device="Christie"/>
+            <InvokeMethod name="ShutterOpen" device="NEC"/>
+            <InvokeMethod name="Play" device="Me"/>
+        </Actions>
+    </Cue>
+
+
+    <!--
+    During execution of this cue,
+    1. Output pin 1 of GPO is set to high,
+    2. Sleep of 1 sec is performed and 
+    3. The output pin 1 of GPO is set back to low  
+ -->
+    <Cue name="GPO_0 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="0" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="0" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_1 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="1" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="1" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_2 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="2" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="2" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_3 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="3" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="3" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_4 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="4" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="4" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_5 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="5" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="5" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_6 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="6" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="6" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_7 ON OFF">
+        <Actions>
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="7" />
+                <Parameter name="State" value="ON" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+            <InvokeMethod name="SetPin" device="Elexol">
+                <Parameter name="Pin" value="7" />
+                <Parameter name="State" value="OFF" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+    <Cue name="GPO_ALL ON OFF">
+        <Actions>
+            <InvokeMethod name="TogglePin" device="Elexol">
+                <Parameter name="Pin" value="0,1,2,3,4,5,6,7" />
+            </InvokeMethod>
+
+            <Sleep duration="1" />
+
+            <InvokeMethod name="TogglePin" device="Elexol">
+                <Parameter name="Pin" value="0,1,2,3,4,5,6,7" />
+            </InvokeMethod>
+        </Actions>
+    </Cue>
+
+</Cues>

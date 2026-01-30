@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+  
+<Triggers xmlns="http://schemas.qubecinema.com/Automation/Triggers/2008-01-26"
+          xmlns:actions="http://schemas.qubecinema.com/Automation/Cues/2008-01-26">
+
+  <Trigger name="EmergencyStop" device="Elexol" event="OnHigh07">
+    <Actions>
+      <actions:InvokeMethod name="Stop" device="Me"/>
+    </Actions>
+  </Trigger>
+
+  <Trigger name="Play" device="Elexol" event="OnHigh00">
+    <Actions>
+      <actions:InvokeMethod name="Play" device="Me"/>
+    </Actions>
+  </Trigger>
+
+  <Trigger name="Pause" device="Elexol" event="OnHigh01">
+    <Actions>
+      <actions:InvokeMethod name="Pause" device="Me"/>
+    </Actions>
+  </Trigger>
+
+  <Trigger name="Stop" device="Elexol" event="OnHigh02">
+    <Actions>
+      <actions:InvokeMethod name="Stop" device="Me"/>
+    </Actions>
+  </Trigger>
+
+  <Trigger name="Toggle" device="Elexol" event="OnHigh03">
+    <Actions>
+      <actions:InvokeMethod name="Toggle" device="Me"/>
+    </Actions>
+  </Trigger>
+  
+</Triggers>

@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adsSpaceLessThanUsedSpace" xml:space="preserve">
+    <value>A quota especificada para publicidade não pode ser guardada porque é inferior à total usada atualmente</value>
+	</data>
+  <data name="advertisement" xml:space="preserve">
+    <value>publicidade</value>
+  </data>
+  <data name="cannotDeleteTitle" xml:space="preserve">
+    <value>Não é possível apagar item</value>
+  </data>
+  <data name="cannotScheduleAnEventInThePast" xml:space="preserve">
+  <value>Não é possível criar um evento no passado!</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>categoria</value>
+  </data>
+  <data name="completedAt" xml:space="preserve">
+    <value>terminado em</value>
+  </data>
+  <data name="computer" xml:space="preserve">
+    <value>computador</value>
+  </data>
+  <data name="cue" xml:space="preserve">
+    <value>ação</value>
+  </data>
+  <data name="cueFailedSince" xml:space="preserve">
+    <value>Carregamento falhou desde</value>
+  </data>
+  <data name="dalapathiNotFound" xml:space="preserve">
+    <value>Dalapathi não encontrado</value>
+  </data>
+  <data name="dcpEntityServiceProviderNotFound" xml:space="preserve">
+    <value>dcpentityserviceprovider não encontrado</value>
+  </data>
+  <data name="invalidPath" xml:space="preserve">
+    <value>Caminho inválido</value>
+  </data>
+  <data name="displayRows" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="downloadLog" xml:space="preserve">
+    <value>registo de downloads</value>
+  </data>
+  <data name="eitherNameOrPathIsInvalid" xml:space="preserve">
+    <value>Nome ou caminho inválido</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>introduza um nome simples para a localização</value>
+  </data>
+  <data name="eventId" xml:space="preserve">
+    <value>evento</value>
+  </data>
+  <data name="features" xml:space="preserve">
+    <value>filmes</value>
+  </data>
+  <data name="fourProjectors" xml:space="preserve">
+    <value>quatro projectores</value>
+  </data>
+  <data name="get" xml:space="preserve">
+    <value>carregar</value>
+  </data>
+  <data name="getKey" xml:space="preserve">
+    <value>carregar chave</value>
+  </data>
+  <data name="givenPlaylistIsNotPlayable" xml:space="preserve">
+    <value>Não é possível executar playlist selecionada</value>
+  </data>
+  <data name="ingest" xml:space="preserve">
+    <value>ingerir</value>
+  </data>
+  <data name="track" xml:space="preserve">
+    <value>pista</value>
+  </data>
+  <data name="titleTrack" xml:space="preserve">
+    <value>nome pista</value>
+  </data>
+  <data name="ingestedAt" xml:space="preserve">
+    <value>ingerir em</value>
+  </data>
+  <data name="invalidAssetType" xml:space="preserve">
+    <value>Item de formato inválido</value>
+  </data>
+  <data name="invalidDatetime" xml:space="preserve">
+    <value>Data e hora inválidas</value>
+  </data>
+  <data name="invalidEvent" xml:space="preserve">
+    <value>Evento inválido</value>
+  </data>
+  <data name="invalidEventId" xml:space="preserve">
+    <value>Id de evento inválido</value>
+  </data>
+  <data name="invalidIpAddress" xml:space="preserve">
+    <value>Endereço IP inválido</value>
+  </data>
+  <data name="invalidJobIds" xml:space="preserve">
+    <value>Id de trabalho inválido</value>
+  </data>
+  <data name="invalidKeyPath" xml:space="preserve">
+    <value>Caminho para chave inválido</value>
+  </data>
+  <data name="invalidKeys" xml:space="preserve">
+    <value>Chaves inválidas</value>
+  </data>
+  <data name="invalidPlaylist" xml:space="preserve">
+    <value>Playlist inválida</value>
+  </data>
+  <data name="invalidPlaylistId" xml:space="preserve">
+    <value>Id de playlist inválida</value>
+  </data>
+  <data name="invalidScheduleUUID" xml:space="preserve">
+    <value>UUID de evento inválido</value>
+  </data>
+  <data name="invalidShow" xml:space="preserve">
+    <value>Sessão inválida</value>
+  </data>
+  <data name="invalidShowId" xml:space="preserve">
+    <value>Id de sessão inválida</value>
+  </data>
+  <data name="invalidShowName" xml:space="preserve">
+    <value>Nome de sessão inválido</value>
+  </data>
+  <data name="invalidTitle" xml:space="preserve">
+    <value>Título inválido</value>
+  </data>
+  <data name="invalidTrack" xml:space="preserve">
+    <value>Pista inválida</value>
+  </data>
+  <data name="invalidTrackId" xml:space="preserve">
+    <value>Id de pista inválida</value>
+  </data>
+  <data name="invalidTransferUUID" xml:space="preserve">
+    <value>UUID de transferência inválida</value>
+  </data>
+  <data name="invalidURI" xml:space="preserve">
+    <value>URI inválido</value>
+  </data>
+  <data name="invalidUUIDFormat" xml:space="preserve">
+    <value>Formato de UUID inválido</value>
+  </data>
+  <data name="kdm" xml:space="preserve">
+    <value>kdm</value>
+  </data>
+  <data name="keyInfoProviderNotFound" xml:space="preserve">
+    <value>keyinfoprovider não encontrado</value>
+  </data>
+  <data name="loadShowFailed" xml:space="preserve">
+    <value>Carregamento de sessão falhou</value>
+  </data>
+  <data name="mediaFolderUsedSpaceLargerThanSpecifiedQuota" xml:space="preserve">
+    <value>A quota especificada ({0} MB) não pode ser guardada porque é inferior à total usada atualmente ({1} MB)</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>mensagem</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>nome</value>
+  </data>
+  <data name="namedIngestSelect" xml:space="preserve">
+    <value>selecionar localização</value>
+  </data>
+  <data name="namedspace" xml:space="preserve">
+    <value>localizações</value>
+  </data>
+  <data name="namedspaceIdIsNull" xml:space="preserve">
+    <value>id de localização inválida</value>
+  </data>
+  <data name="novalidIngestableTitles" xml:space="preserve">
+    <value>sem conteúdo válido para ingestão</value>
+  </data>
+  <data name="objectNotFound" xml:space="preserve">
+    <value>{0} não encontrado para a id {1}</value>
+  </data>
+  <data name="others" xml:space="preserve">
+    <value>outros</value>
+  </data>
+  <data name="pauseFailedSince" xml:space="preserve">
+    <value>Pause falhou porque</value>
+  </data>
+  <data name="play" xml:space="preserve">
+    <value>exibir</value>
+  </data>
+  <data name="playFailedSince" xml:space="preserve">
+    <value>Exibição falhou porque</value>
+  </data>
+  <data name="playlists" xml:space="preserve">
+    <value>listas de exibição</value>
+  </data>
+  <data name="playlist" xml:space="preserve">
+    <value>listas de exibição</value>
+  </data>
+  <data name="schedule" xml:space="preserve">
+    <value>programação</value>
+  </data>
+  <data name="evnt" xml:space="preserve">
+    <value>evento</value>
+  </data>
+  <data name="pleaseSelectASignalFormat" xml:space="preserve">
+    <value>selecione um formato de sinal</value>
+  </data>
+  <data name="pleaseSelectNumberOfProjectors" xml:space="preserve">
+    <value>selecione o número de projectores</value>
+  </data>
+  <data name="projector1Tab" xml:space="preserve">
+    <value>projector 1</value>
+  </data>
+  <data name="projector2Tab" xml:space="preserve">
+    <value>projector 2</value>
+  </data>
+  <data name="projector3Tab" xml:space="preserve">
+    <value>projector 3</value>
+  </data>
+  <data name="projector4Tab" xml:space="preserve">
+    <value>projector 4</value>
+  </data>
+  <data name="qube" xml:space="preserve">
+    <value>qube</value>
+  </data>
+  <data name="referredInShow" xml:space="preserve">
+    <value>Não é possível apagar conteúdo pois está inserido numa sessão</value>
+  </data>
+  <data name="resumeshowFailedSince" xml:space="preserve">
+    <value>Retoma de sessão falhou desde</value>
+  </data>
+  <data name="selectProjector" xml:space="preserve">
+    <value>selecione projector</value>
+  </data>
+  <data name="selectResolution" xml:space="preserve">
+    <value>selecione resolução</value>
+  </data>
+  <data name="selectShow" xml:space="preserve">
+    <value>selecione sessão</value>
+  </data>
+  <data name="selectShow2LoadOrResume" xml:space="preserve">
+    <value>selecione sessão para carregar ou retomar</value>
+  </data>
+  <data name="selectShow2Modify" xml:space="preserve">
+    <value>selecione sessão para modificar</value>
+  </data>
+  <data name="selectTimeZone" xml:space="preserve">
+    <value>selecione fuso horário</value>
+  </data>
+  <data name="serverTimeIs" xml:space="preserve">
+    <value>porque a hora do servidor é</value>
+  </data>
+  <data name="shorts" xml:space="preserve">
+    <value>curtas</value>
+  </data>
+  <data name="show" xml:space="preserve">
+    <value>sessão</value>
+  </data>
+  <data name="showDrag" xml:space="preserve">
+    <value>selecione sessão para agendar</value>
+  </data>
+  <data name="showIdIsNull" xml:space="preserve">
+    <value>Id de sessão é inválido</value>
+  </data>
+  <data name="showNameAlreadyExists" xml:space="preserve">
+    <value>Nome de sessão já existe</value>
+  </data>
+  <data name="showNameIsNull" xml:space="preserve">
+    <value>Nome de sessão inválido</value>
+  </data>
+  <data name="singleProjector" xml:space="preserve">
+    <value>um projector</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>origem</value>
+  </data>
+  <data name="startedAt" xml:space="preserve">
+    <value>iniciou às</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>estado</value>
+  </data>
+  <data name="stopFailedSince" xml:space="preserve">
+    <value>Stop falhou porque</value>
+  </data>
+  <data name="stoppedAt" xml:space="preserve">
+    <value>parou às</value>
+  </data>
+  <data name="system" xml:space="preserve">
+    <value>sistema</value>
+  </data>
+  <data name="timeNotAvailabe" xml:space="preserve">
+    <value>Sessão não pode ser agendada porque já existe uma programada para a mesma altura.</value>
+  </data>
+  <data name="timeWritten" xml:space="preserve">
+    <value>escrito em</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>composição</value>
+  </data>
+  <data name="titleInfoProviderNotFound" xml:space="preserve">
+    <value>titleinfoprovider não encontrado</value>
+  </data>
+  <data name="trailer" xml:space="preserve">
+    <value>trailers</value>
+  </data>
+  <data name="twoProjectors" xml:space="preserve">
+    <value>dois projectores</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>nome de utilizador</value>
+  </data>
+  <data name="usherNotFound" xml:space="preserve">
+    <value>Usher não encontrado</value>
+  </data>
+  <data name="velaikaranServiceNotAvailable" xml:space="preserve">
+    <value>serviço Velaikaran não disponível</value>
+  </data>
+  <data name="wait" xml:space="preserve">
+    <value>espera</value>
+  </data>
+  <data name="assetNotAvailable" xml:space="preserve">
+    <value>{0} não disponível para o assetUUID ({1}) no URI {2} dado</value>
+  </data>
+  <data name="commercial" xml:space="preserve">
+    <value>publicidade</value>
+  </data>
+  <data name="playType" xml:space="preserve">
+    <value>modo exibição</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>teste</value>
+  </data>
+  <data name="property" xml:space="preserve">
+    <value>propriedade</value>
+  </data>
+  <data name="featureInfoProviderNotFound" xml:space="preserve">
+    <value>featureinfoprovider não encontrada</value>
+  </data>
+  <data name="mediafolderAlreadyExists" xml:space="preserve">
+    <value>Media folder já existe</value>
+  </data>
+  <data name="invalidMediaFolderPath" xml:space="preserve">
+    <value>A localização da Media folder é inválida</value>
+  </data>
+  <data name="feature" xml:space="preserve">
+    <value>filme</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>geral</value>
+  </data>
+  <data name="mediaManagement" xml:space="preserve">
+    <value>gestão de conteúdo</value>
+  </data>
+  <data name="projector" xml:space="preserve">
+    <value>projector</value>
+  </data>
+  <data name="timecode" xml:space="preserve">
+    <value>timecode</value>
+  </data>
+  <data name="invalidKeyEssence" xml:space="preserve">
+    <value>Conteúdo da chave inválido ou vazio</value>
+  </data>
+  <data name="NullOrEmptyItem" xml:space="preserve">
+    <value>{0} inválido ou vazio</value>
+  </data>
+  <data name="securityLogErrorMsg" xml:space="preserve">
+    <value>Play não iniciou devido a um aviso/erro do registo de segurança do projector, tente novamente daqui a uns momentos.</value>
+  </data>
+  <data name="unsupportedMediaFolder" xml:space="preserve">
+    <value>Localização do media folder inválida.&lt;br&gt;Pff introduza uma localização válida.</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+</root>

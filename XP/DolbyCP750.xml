@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<StreamDevice name="CP750" xmlns="http://schemas.qubecinema.com/Automation/StreamDevice/2008-01-26">
+
+  <Init>
+    <Instructions>
+      <Send>cp750.ctrl.full_ascii_ctrl 1&#x0D;&#x0A;</Send>
+    </Instructions>
+  </Init>  
+
+  <Method name="Mute">
+    <Instructions>
+      <Send>cp750.sys.mute 1&#x0D;&#x0A;</Send>
+    </Instructions>
+  </Method>
+
+  <Method name="UnMute">
+    <Instructions>
+      <Send>cp750.sys.mute 0&#x0D;&#x0A;</Send>
+    </Instructions>
+  </Method>
+
+  <Method name="SelectInput">
+    <Parameter name= "Input"/>  <!--analog, dig_1, dig_2, dig_3, dig_4, mic, non_sync, last-->
+    <Instructions>
+      <Send>cp750.sys.input_mode $Input&#x0D;&#x0A;</Send>
+    </Instructions>
+  </Method>
+
+  <Method name="SelectFaderPreset">
+    <Parameter name= "PresetValue"/>  <!--0 to 100-->
+    <Instructions>
+      <Send>cp750.sys.fader $PresetValue&#x0D;&#x0A;</Send>
+    </Instructions>
+  </Method>
+
+ </StreamDevice>

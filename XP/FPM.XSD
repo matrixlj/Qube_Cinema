@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 2006-03-03-jhurst -->
+<!-- 2006-05-15-mbardetti -->
+<xs:schema
+  targetNamespace="http://schemas.qubecinema.com/XP/07-07-2009/FPM"
+  xmlns:fpm="http://schemas.qubecinema.com/XP/07-07-2009/FPM"
+  xmlns:etm="http://www.smpte-ra.org/schemas/430-3/2006/ETM"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="http://www.smpte-ra.org/schemas/430-3/2006/ETM" schemaLocation="./dco-etm.xsd"/>
+  <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+  <xs:element name="FPMRequiredExtensions" type="fpm:FPMRequiredExtensionsType"/>
+
+  <xs:complexType name="FPMRequiredExtensionsType">
+    <xs:sequence>
+      <!-- Identifies the certificate of the entity receiving the KDM. -->
+      <xs:element name="Recipient">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="X509IssuerSerial" type="ds:X509IssuerSerialType"/>
+            <xs:element name="X509SubjectName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="Features">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Feature" type="fpm:FeatureType" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="FeatureType">
+    <xs:sequence>
+      <xs:element name="FeatureId" type="etm:UUID"/>
+      <xs:element name="FeatureText" type="xs:string"/>
+      <xs:element name="FeatureNotValidBefore" type="xs:dateTime"/>
+      <xs:element name="FeatureNotValidAfter" type="xs:dateTime"/>
+      <xs:element name="FeatureControlFlag" type="xs:anyURI"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

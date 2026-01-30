@@ -1,0 +1,384 @@
+﻿
+/* prevent selection in safari */
+::selection {
+   background: transparent;
+   color: inherit;
+}
+
+/*prevent selection in mozilla */
+::-moz-selection {
+   background: transparent;
+   color: inherit;
+}
+
+.tooltip
+{    
+    background: #FFFFE1;
+    border: 1px solid #black;
+    text-align: center;
+    font-size: 11px;
+    z-index:100001;
+    padding: 1px;
+    border:solid 1px black;        
+    max-width:540px;    
+}
+
+#MenuTable
+{
+	left:150px;
+	top:10px;
+	position:absolute;
+	z-index:1;
+}
+
+.menu tr
+{
+	border:0px;	
+	vertical-align:top;	
+}
+
+.menu td
+{	
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:0px;
+	padding-bottom:0px;	
+	vertical-align:top;	
+	white-space:nowrap;
+}
+
+.menu a
+{
+	font-family:Trebuchet MS;
+	font-size:16px;
+	line-height: 20px; 	
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;			
+}
+
+h1
+{
+	font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	line-height: 18px; 
+	color: #FFF;
+}
+
+h2
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	color: #FFF;
+	font-weight:bold;
+}
+
+h3
+{
+	font-family: Trebuchet MS ; 
+	font-size: 20px; 
+	line-height: 26px; 
+	color: #FFF;
+	font-weight:bold;
+}
+
+.h1, .scheduleShowLabel, .DateLabel, .timeLabel, .savePathInfoLabel, .leaveContentAtSource,
+    .autoDeleteTypeLabel, .mediaDateLabel, .fileLabel, .downloadDiagnostics, .titleTypeProgress,
+    .zonesave, .offsetLabel, .waitDurationLabel, .triggerEventLabel, .confirmationWindowContentText,
+    .ingestControl,.noCompositionFound, .mediaFolderHeader span, .validationErrorText
+    , .outputLabel, .resolutionLabel, .lensLabel, .screenAspectRatioLabel
+{
+	font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	line-height: 18px; 
+	font-weight:bold;
+}
+
+.h2, .showLabel, .showDurationLabel, .showDurationInfo, .showNameLabel, .gotoDateLabel, .selectShowToSchedule,
+    .schedulerTitle, .ingestStatusLabel, .progressLabel, .compositionLabel, .transferringLabel, .suspendedLabel,
+    .queuedLabel, .namedSpaceLabel, .localLabel, .networkLabel, .userNameLabel, .passwordLabel,.keyStatusLabel, 
+    .keyCompositionLabel, .keyEndDateLabel, .keyStartDateLabel, .keyValidLabel, .keyValidInFutureLabel,
+    .keyExpiredLabel, .noKeyLabel, .downloadCertificateLabel, .keyUploadLabel, .searchLabel, .mediaStorageLabel,
+    .mediaStorageLeftPercentage, .mediaUsedSpace, .logFromLabel, .logToLabel, .projectorsLabel, .signalFormatLabel,
+    .analogLabel, .aesLabel, .audioOutputLabel, .audioOffsetLabel, .psfLabel, .playWithErrorLabel,
+    .pathLabel, .quotaLabel, .mbLabel, .threeDModeLabel, .featureValidLabel, .featureValidInFutureLabel,
+    .maintenanceLocalLabel, .maintenanceWebLabel, .selectUpdatePackageLabel, .showPlayTypeLabel, .menu a, 
+    .jobName, .progressInfoLabel, .configFileLabel, .threeDModeInfo, .configFileInfo, .IngestableTitleText,
+    .TCLevelLabel, .TCFrameRateLabel, .TCOffsetLabel, .setupTimeCodeEnableLbl, .setupFrameRateLbl, .setupOutputLevelLbl,
+    .TCDelayLabel, .subtitleLabel, .audioSampleRateLabel, .soundProcessor-content, .soundProcessor-content a
+{
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	font-weight:bold;
+}
+
+.h3, .serialNumberLabel, .serialNumberInfo, 
+    .timeZoneLabel, .mediaFolderLabel, .systemLabel, .updateFirmwareLabel, .statusShowDurationStatus span, 
+    .statusCurrentIngestCompleted, .statusEstimatedTimeToCompletion, .statusDuration, .timeInfo span, .statusFreeSpaceInPercentage, 
+    .statusUsedSpace, .playbackControlLabel span, .activeControlStatusLabel, .controlStatusLabel, .controlStatusInfo, 
+    .controlDurationLabel, .controlDurationInfo, .controlShowTimeLabel, .controlShowTimeInfo,
+    .controlEventTimeLable, .controlEventTimeInfo, .controlShowStartTime, .controlCurrentDuration, .controlShowEndTime,
+    .loopLabel, .raidLabel, .raidStatusLabel, .featureLabel, .bufferSizeLabel, .theaterCodeLabel, .screenCodeLabel,
+    .setupAutoDeleteLabel, .subtitlingLabel
+{
+	font-family: Trebuchet MS ; 
+	font-size: 20px; 
+	line-height: 26px; 
+	font-weight:bold;
+}
+
+.h4, .currentIngestLabel, .keysLabel, .setupLabel, .statusCurrentShowLabel, .statusCurrentShowName, .statusCurrentIngestLabel, 
+    .statusCurrentIngestName, .statusStorageLabel, .recentEventLabel, .controlCurrentShowLabel, .controlCurrentShowName 
+{
+	font-family: Trebuchet MS ; 
+	font-size: 26px; 
+	line-height: 32px; 
+	font-weight:bold;
+}
+
+.versionLabel
+{    
+	line-height:20px;
+	text-align: center;
+	left: 10px;
+	width: 113px;
+	height: 1px;
+	top: 32px;	
+	position: absolute;		
+}
+
+.menu .MenuFocus
+{  
+	font-family: Trebuchet MS ; 
+	font-size: 17px; 
+	line-height: 20px;
+	text-decoration: underline;
+}
+
+.processingText, .progressIndicatorText
+{	 
+	font-weight:bold;
+	font-size:16px;	
+	letter-spacing:1px;
+	font-family: Trebuchet MS ; 
+}
+
+.progressIndicator
+{
+	background-color:#A5A5A5;
+	filter:alpha(opacity=1);
+	opacity:0.01;
+}
+
+.progressIndicatorFailed
+{
+	background-color:#A5A5A5;
+	filter:alpha(opacity=70);
+	opacity:0.7;	
+}
+
+.loginInfo
+{	
+	font-family: Trebuchet MS ; 
+	font-size: 12px; 	
+	font-weight:normal;
+	position:absolute;
+	left:525px;
+	top:45px;
+	width:465px;	
+}
+
+.yesA, .noA, .okA, .okADisabled, .scheduleA, .scheduleADisabled
+{
+    background-repeat:no-repeat;
+}
+
+.yesA
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Yes Enabled.gif");
+}
+
+.noA
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Cancel Enabled.gif");
+}
+
+.divbuttonCont
+{
+	left:105px;
+	top:120px;
+	position:absolute;
+}
+
+.okA
+{
+    background-image:url("../res/Skins/#SKINCOLOUR#/Common/Ok Enabled.gif");
+}
+
+.okADisabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Save Disabled.gif");
+}
+
+.scheduleA
+{
+      background-image:url("../res/Skins/#SKINCOLOUR#/Schedule/Schedule Enabled.gif");
+}
+
+.scheduleADisabled
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Schedule/Schedule Disabled.gif");
+}
+
+.ajax__tab_xp div.ajax__tab_header
+{
+    background-image:none;
+}
+
+.ajax__tab_xp div.ajax__tab_body 
+{
+	font-family:verdana,tahoma,helvetica;
+	font-size:10pt;
+	border:0px solid #999999;
+	border-top:0;
+	padding:10px;
+}
+
+.ajax__tab_xp .ajax__tab_tab 
+{
+	font-size:12px;
+	font-weight:bold;
+	color:Black;
+}
+
+.ajax__tab_xp a
+{
+    text-decoration:none;
+}
+
+.tblCW
+{
+	width:100%;
+	height:160px;
+}
+
+.dummy			/*more than one page accessing this 'dummy' style. careful while modifying it*/
+{	
+	width:0px;
+	height:0px;
+	left:-100px; 		
+	position:absolute;
+}
+
+span
+{
+	white-space:nowrap;
+}
+
+.buttonSize
+{
+	background-repeat:no-repeat;
+	width:115px;
+	height:39px;
+}
+
+.buttonEnabled
+{	
+	cursor:pointer;
+	background-repeat:no-repeat;
+}
+
+.buttonDisabled
+{
+    cursor:default;
+    background-repeat:no-repeat;  
+}
+
+.buttonEnabled a, .buttonDisabled span
+{
+	text-decoration:none;
+	font-size:15px;
+	background-color:Transparent;
+}
+
+.buttonDisabled, .buttonEnabled
+{
+	text-align:center;
+	vertical-align:middle;	
+}
+
+.imgyes
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Yes Enabled.gif"); 
+	width:113px; 
+	height:39px;
+    text-align:center; 
+    vertical-align:middle;
+    padding-left:35px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+}
+
+.imgno
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Common/Cancel Enabled.gif"); 
+	width:113px; 
+	height:39px;
+    text-align:center; 
+    vertical-align:middle;
+    padding-left:35px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+}
+
+.watermark
+{
+    width:89px;	
+	font-weight:normal;
+}
+
+.watermarkColor, .watermark
+{
+    color:Gray;
+}
+
+.buttonText, .buttonEnabledText, .buttonDisabledText
+{
+    font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.modalPopupBackground
+{
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;	
+}
+
+.confirmationWindowFrame, .confirmationWindow
+{
+	border-width:6px;
+	border-style:solid;
+	padding:3px 3px 0px 3px;	
+	width:340px;
+	min-height:160px;
+}
+
+.serialNumberLink
+{
+    left: 15px;
+	top: 48px;	
+	position: absolute;	
+}
+
+.versionLabel, .serialNumberLink
+{
+	font-family:Trebuchet MS;
+	font-size:11px;
+	font-weight:normal;
+	z-index: 1;
+}

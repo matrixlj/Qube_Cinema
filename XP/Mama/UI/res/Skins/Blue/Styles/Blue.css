@@ -1,0 +1,631 @@
+﻿/* Start Common */
+
+body
+{
+	margin-right:25px;
+	margin-bottom:25px;	
+	background-color:#7CA5D1;
+}
+
+.menuTextColor, .menu a, .menu .MenuFocus
+{
+    color:White;
+}
+
+.loginUserNameLabel, .theatreCode, .screenCode, .theatreCodeValue, .screenCodeValue, .setupTimeCodeEnableLbl,
+.setupFrameRateLbl, .setupOutputLevelLbl
+{
+    color:White;
+}
+
+.ContextMenuPanel 
+{
+	border: 1px solid #868686;
+	z-index: 1000;	
+	background:url("../res/Skins/#SKINCOLOUR#/Common/menu-bg.gif") repeat-y 0 0 #FAFAFA;
+	cursor: default;
+	padding: 1px 1px 0px 1px;			
+	overflow:auto;		
+	overflow-x:hidden;	
+}
+
+.ContextMenuBreak
+{
+	margin:1px 1px 1px 32px;
+	padding:0;
+	height:1px;
+	overflow:hidden;
+	display:block;
+	border-top: 1px solid #C5C5C5;	
+}
+
+a.ContextMenuItem
+{
+	margin: 1px 0 1px 0;
+	display: block;
+	color: #003399;
+	text-decoration: none;
+	cursor: pointer;	
+	padding: 1px 19px 1px 33px;	
+	white-space:nowrap;	
+	font-family: Trebuchet MS ;
+	font-size: 11px;	 	
+}
+
+a.ContextMenuItem-Selected
+{
+	font-weight: bold;
+}
+
+a.ContextMenuItem:hover
+{
+	background-color: #FFE6A0;
+	color: #003399;
+	border: 1px solid #D2B47A;
+	padding: 0px 18px 0px 32px;	
+}
+
+.AjaxDropDown
+{		 	
+	padding-right:25px;
+	padding-left:5px;
+	font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	line-height: 20px; 
+	color: #FFF;
+}
+
+.progressIndicatorText
+{
+    color:Red;
+}
+
+.modalPopup
+{
+	border-width:6px;
+	border-style:solid;
+	border-color:#4575B3;
+	padding:3px;
+	width:250px;
+	height:200px;	
+}
+
+.modalPopupBackgroundColor, .modalPopup
+{
+    background-color: #B4CCE6;
+}
+
+.modalPopupTitle
+{
+	background-color:#DDDDDD;
+	border-width:0px;
+	height:20px;
+	border-style:outset;
+	color:black;
+	padding:3px;
+    font-weight:bold;
+    font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px;	 		
+}
+
+.confirmationWindowContentText
+{
+	color:Black;
+	font-weight:normal;		
+}
+
+.confirmationWindow
+{
+	background-color:#B4CCE6;
+	border-color:#4575B3;	
+}
+
+.buttonEnabledText
+{
+    color:Black;
+}
+
+.buttonDisabledText
+{
+    color:Black;
+}
+
+.rowEven
+{
+    background-color:#CBDEF2;
+}
+
+.rowOdd
+{
+    background-color:White;
+}
+
+.versionText, .versionLabel, .serialNumberLink
+{
+    color: #4682b4;
+}
+
+.ajax__tab_xp div.ajax__tab_body 
+{
+    background-color:#B4CCE6;
+}
+
+.buttonPadding
+{
+    padding-left:35px;
+}
+
+/* End Common */
+
+/* Start Status Page */
+
+.statusCurrentShowLabel, .statusCurrentIngestLabel, .statusStorageLabel, 
+    .recentEventLabel, .statusShowDurationStatus span, .statusCurrentIngestCompleted, 
+    .statusEstimatedTimeToCompletion, .statusDuration, .timeInfo span, .statusFreeSpaceInPercentage, 
+    .statusUsedSpace, .raidLabel
+{	
+	color: #FFF;
+}
+
+.statusCurrentIngestName, .statusCurrentShowName, .raidStatusLabel
+{
+    color:#acde00;
+}
+
+.recentEventFrame
+{	
+	border-right: #9bb4d3 1px solid;
+	border-top: #9bb4d3 1px solid;
+	border-left: #9bb4d3 1px solid;
+	border-bottom: #9bb4d3 1px solid;
+}
+
+.recentEventRowText
+{	
+    color: #acde00;
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.recentEventRowOdd
+{
+    background-color: #174C9C;
+}
+
+.recentEventRowEven
+{
+    background-color:Transparent;
+}
+
+/* End Status Page */
+
+/* Start Control Page */
+
+.controlStatusLabel, .controlDurationLabel, .controlShowTimeLabel, .controlEventTimeLable, 
+    .controlShowStartTime, .controlCurrentDuration, .controlShowEndTime ,
+    .loopLabel, .palybackControlLabel span, .controlCurrentShowLabel,
+    .showPlayTypeLabel   
+{
+	color: #FFF;
+}
+
+.controlCurrentShowName, .controlDurationInfo, .controlShowTimeInfo, .controlStatusInfo, 
+.controlEventTimeInfo
+{
+    color:#acde00;
+}
+
+.controlShowStartTime, .controlShowEndTime, .controlCurrentDuration
+{
+    color:White;
+}
+
+.controlDurationUpDownButton
+{
+    background-color:Transparent;
+    color:Black;
+}
+
+.controlDurationUpDownButton-hover
+{
+    background-color:#799AC7;
+    color:Orange;
+}
+
+.activeControlStatusLabel
+{
+    color:#acde00;
+}
+
+.event
+{
+    background-color: GrayText;
+}
+
+.selectedEvent
+{
+    background-color:Orange;
+}
+
+.currentEvent
+{
+    background-color:#92cd32;
+}
+
+.eventName
+{
+	color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+	cursor:default;
+}
+
+.eventStatus
+{
+	position:relative;
+	color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+}
+
+.eventFrame, .event, .selectedEvent, .currentEvent
+{
+    border-right: white 1px solid;
+	border-top: white 1px solid;
+	border-left: white 1px solid;
+	border-bottom: white 1px solid;
+}
+
+.validationFailedTextColor
+{
+    color:Orange;
+}
+
+.validationShowerTextColor
+{
+    color:Red;
+}
+
+.validationErrorTextColor
+{
+    color:#333333;
+    font-weight:normal;
+}
+
+.controlPlaySrc
+{
+    background-image: url("../res/Skins/#SKINCOLOUR#/Control/Play Inactive.png");
+}
+
+.controlPauseSrc
+{
+    background-image: url("../res/Skins/#SKINCOLOUR#/Control/Pause Inactive.png");
+}
+
+.controlStopSrc
+{
+    background-image: url("../res/Skins/#SKINCOLOUR#/Control/Stop Inactive.png");
+}
+
+.controlEjectSrc
+{
+    background-image: url("../res/Skins/#SKINCOLOUR#/Control/Eject.png");
+}
+
+.controlplayDisabled
+{	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Play Enabled.png");
+}
+
+.controlPlayInactive
+{	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Play Disabled.png");
+}
+
+.controlpauseDisabled
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Pause Enabled.png");
+	cursor:default;
+}
+
+.controlstopDisabled
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Stop Enabled.png");
+}
+
+.controlStopInactive
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Control/Stop Disabled.png");
+}
+
+.controlPauseInactive
+{
+    background-image: url("../res/Skins/#SKINCOLOUR#/Control/Pause Disabled.png");
+}
+
+/* End Control Page */
+
+/* Start Ingest Page */
+
+.borderLeftTopBottom
+{		
+	border-right: white 0px solid;
+	border-top: white 1px solid;
+	border-left: white 1px solid;
+	border-bottom: white 1px solid;
+}
+
+.borderRightTopBottom
+{		
+	border-right: white 1px solid;
+	border-top: white 1px solid;
+	border-left: white 0px solid;
+	border-bottom: white 1px solid;
+}
+
+.borderLeftBottom
+{		
+	border-right: white 0px solid;
+	border-top: white 0px solid;
+	border-left: white 1px solid;
+	border-bottom: white 1px solid;
+}
+
+.borderRightBottom
+{		
+	border-right: white 1px solid;
+	border-top: white 0px solid;
+	border-left: white 0px solid;
+	border-bottom: white 1px solid;
+}
+
+.borderBottomTop
+{		
+	border-right: white 0px solid;
+	border-top: white 1px solid;
+	border-left: white 0px solid;
+	border-bottom: white 1px solid;
+}
+
+.borderLeft
+{		
+	border-right: white 0px solid;
+	border-top: white 0px solid;
+	border-left: white 1px solid;
+	border-bottom: white 0px solid;
+}
+
+.borderRight
+{		
+	border-right: white 1px solid;
+	border-top: white 0px solid;
+	border-left: white 0px solid;
+	border-bottom: white 0px solid;
+}
+
+.borderBottom
+{		
+	border-right: white 0px solid;
+	border-top: white 0px solid;
+	border-left: white 0px solid;
+	border-bottom: white 1px solid;
+}
+
+.passwordLabel, .userNameLabel, .networkLabel, .localLabel, .namedSpaceLabel, .queuedLabel,
+    .transferringLabel, .suspendedLabel, .progressLabel, .compositionLabel, .ingestStatusLabel,
+    .currentIngestLabel,.savePathInfoLabel
+{
+    color:White;
+}
+
+.jobName, .progressInfoLabel
+{
+    color:Gray;
+}
+
+.notIngestedIndicator, .notIngestedLabel, .leaveContentAtSource, .noCompositionFound
+{
+    color:Black;
+}
+
+.ingestableItemBorderColor
+{
+    background-color:white;
+}
+
+.IngestableTitleText
+{
+    color:Black;
+}
+
+/* End Ingest Page */
+
+/* Start Keys page */
+
+.keysLabel, .keyStatusLabel, .keyCompositionLabel, .keyEndDateLabel, .keyStartDateLabel, .keyValidLabel,
+    .keyValidInFutureLabel, .keyExpiredLabel, .noKeyLabel, .downloadCertificateLabel, .keyUploadLabel
+{
+    color:White;
+}
+
+/* End Keys Page */
+
+/* Start Logs page */
+
+.pageNavigator table td, .pageNavigator-active
+{
+	background-color:#B4CCE6;
+	color:#CF0F05;	
+}
+
+.pageNavigator a:link
+{
+	text-decoration:none;
+	color:Black;
+}
+
+.pageNavigator a:visited
+{
+	color:Black;
+	text-decoration:none;
+}
+
+.pageNavigator a:hover
+{
+	color:Orange;
+	text-decoration:none;
+}
+
+.logFromLabel, .logToLabel
+{
+    color:White;
+}
+
+/* End Logs Page */
+
+/* Start Maintenance page */
+
+.maintenanceLocalLabel, .maintenanceWebLabel, .selectUpdatePackageLabel,
+    .downloadDiagnostics, .updateFirmwareLabel, .systemLabel
+{
+    color:white;
+}
+
+/* End Maintenance Page */
+
+/* Start Media page */
+
+.searchLabel, .mediaStorageLabel, .mediaStorageLeftPercentage, .mediaUsedSpace
+{
+    color:White;
+}
+
+.autoDeleteTypeLabel, .mediaDateLabel
+{
+    color:Black;
+}
+
+.mediaFrame, .divmedia
+{
+    background-color:#B3CAE4;
+}
+
+.mediaStorageFrame, .divprogressbar
+{
+    border-right: #B3CAE4 1px solid;
+	border-top: #B3CAE4 1px solid;
+	border-left: #B3CAE4 1px solid;
+	border-bottom: #B3CAE4 1px solid;
+}
+
+.buttonAutoDeletePadding
+{
+	padding-left:5px;
+	padding-right:0px;
+}
+
+/* End Media Page */
+
+/* Start Schedule page */
+
+.alternateRow
+{
+	background-color: #E9EEEE;
+}
+
+.selectShowToSchedule, .schedulerTitle, .gotoDateLabel
+{
+    color:White;
+    white-space:normal;
+}
+
+.schedulerTitleBackGround
+{
+    background-color:#8F97B5;
+}
+
+.dateLabel, .timeLabel, .scheduleShowLabel
+{
+    color:Black;
+}
+
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+
+/* End Schedule Page */
+
+/* Start Setup page */
+
+.setupLabel, .serialNumberLabel, .projectorsLabel, .signalFormatLabel, .analogLabel, .aesLabel,
+    .audioOutputLabel, .audioOffsetLabel, .psfLabel, .outputLabel, .resolutionLabel, .lensLabel,
+    .screenAspectRatioLabel, .playWithErrorLabel, .setupAutoDeleteLabel, .bufferSizeLabel,
+    .timeZoneLabel, .mediaFolderLabel, .pathLabel, .quotaLabel, .mbLabel, .theaterCodeLabel,
+    .screenCodeLabel, .threeDModeLabel, .configFileLabel, .zonesave, .featureLabel, 
+    .featureValidTillLabelColor, .featureValidFromLabelColor, .featureNameLabelColor, 
+    .featureStausLabelColor, .TCOffsetLabel, .TCDelayLabel, .subtitleLabel, .subtitlingLabel,
+    .audioSampleRateLabel, .soundProcessor-content, .soundProcessor-content a
+{
+    color:White;
+}
+
+.dlpCinemaIPLabel, .projectorIPLabel
+{
+    color:black;
+}
+
+.serialNumberInfo, .threeDModeInfo, .configFileInfo
+{
+    color:#acde00;
+}
+
+.mediaFolderHeader
+{
+    background-color:#D3CFC7;
+    color:Black;
+}
+
+.FeaturesFrameColor
+{
+    background-color:#B3CAE4;
+}
+/* End Setup Page */
+
+/* Start Show page */
+
+.showNameTextBoxFrame, .showNameTextBox
+{
+    background-color:#FFF3DB;
+	border-right: #2353B2 1px solid;
+	border-top: #2353B2 1px solid;
+	border-left: #2353B2 1px solid;
+	border-bottom: #2353B2 1px solid;
+}
+
+.showNameLabel, .showDurationLabel, .showDurationInfo, .showLabel
+{
+    color:White;
+}
+
+.cueEventInputParamWindow
+{
+    background-color:#B5CDE9;
+}
+
+.offsetLabel, .waitDurationLabel, .triggerEventLabel, .showApplyText
+{
+    color:Black;
+}
+
+/* End Show Page */

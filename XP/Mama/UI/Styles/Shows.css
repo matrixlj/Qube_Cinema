@@ -1,0 +1,539 @@
+﻿.drag 
+{ 
+	cursor:pointer; 
+}
+.dragelement
+{
+	position:absolute; 
+	cursor:pointer;
+}
+
+.divcontrols
+{
+	left: 25px;
+	top: 79px;
+	position:absolute;
+}
+
+.divshownew, #newShowDisabled
+{
+	width: 117px;
+	height: 40px;	
+	background-repeat: no-repeat;
+}
+
+.divshownew
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/New Enabled.gif" );	
+}
+
+#newShowDisabled
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/New Disabled.gif" );	
+	display:none;
+}
+
+.divshowdelete, #deleteShowDisabled
+{
+    background-repeat:no-repeat;
+}
+
+.divshowdelete
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Delete Enabled.gif");
+}
+
+#deleteShowDisabled
+{	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Delete Disabled.gif");	
+	display:none;
+}
+
+.titlesDiv
+{
+	width:100%;
+	height:244px;
+	background-color:#ffffff;
+	overflow:scroll;
+	overflow-x:hidden;	
+}
+
+.titlesDivs
+{
+	width:208px;
+	height:97px;
+	background-color:#ffffff;
+	overflow:scroll;
+	overflow-x:hidden;	
+}
+
+.divapp, .cueEventInputParamWindow
+{
+	left:757px;
+	top:287px; 
+	position:absolute;
+	width:208px;
+	height:144px;
+}
+
+.hideParam
+{	
+	width:210px;
+	height:132px;
+	left:755px;
+	top:300px;
+	position:absolute;
+	background-color:#DDDDDD;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	z-index:1000;
+}
+
+.titlesDiv td
+{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#titlesTable
+{
+	left: 0px;
+	top: 0px;
+	width: 675px;
+	height: 13px;
+	position: relative;
+	border-collapse: collapse;
+	background-color:#ffffff;
+}
+
+.titleRow, .mediaSelectedRow, .searchSelectedRow, .titleRowBlue
+{
+	cursor:pointer;
+	height:24px;
+}
+
+.compositionName
+{
+	width: 45%;	
+	color:#333333;
+	overflow:hidden;
+	white-space:nowrap;			
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.img
+{
+	width:25px;	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Add Icon.gif");
+	background-repeat: no-repeat;	
+}
+
+#WaitEventsDiv td
+{
+	vertical-align:top;
+}
+
+#CueEventsDiv td
+{
+	vertical-align:top;
+}
+
+.titleInfoStyle
+{
+	width:8%;
+	text-align:center;
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	line-height: 18px;
+	color:Black;
+	overflow:hidden;
+	white-space:nowrap;	
+}
+
+#timeline
+{
+	left: 28px;
+	top: 468px;
+	width: 946px;
+	height: 62px;
+	position: absolute;		
+}
+
+.showName
+{
+	left:30px;
+	top: 570px;
+	width:715px;
+	position: absolute;
+}
+
+.showDuration
+{
+	left:30px;
+	top: 537px;	
+	width:955px;
+	position: absolute;	
+}
+
+.showNameTextBox
+{
+	top:0px;
+	padding-top:3px;
+	padding-left:2px;
+	font-weight: bolder;
+	width: 175px;
+	color: black;	
+}
+
+.divshowsave, #saveShowDisabled
+{
+	left: 747px;
+	top: 569px;
+	position: absolute;
+	background-repeat:no-repeat;
+}
+
+.divshowsave
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Save Enabled.gif");		
+	display:none;
+}
+
+#saveShowDisabled
+{	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Save Disabled.gif");		
+}
+
+.divshowcancel, #cancelShowDisabled
+{
+	left: 866px;
+	top: 569px;
+	width: 115px;
+	height: 40px;
+	position: absolute;
+	background-repeat:no-repeat;
+}
+
+.divshowcancel
+{
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Cancel Enabled.gif");
+}
+
+#cancelShowDisabled
+{	
+	background-image: url("../res/Skins/#SKINCOLOUR#/Common/Cancel Disabled.gif");
+	visibility: hidden;
+}
+
+.cueEventImg
+{
+	padding:0;
+	top: -18px;	
+	position: absolute;
+	background-color:Transparent;	
+	width:17px;
+	height:22px;
+}
+
+.waitEventImg
+{
+	padding:0;
+	top: -18px;	
+	position: absolute;
+	background-color:Transparent;
+	width:17px;
+	height:22px;
+}
+
+.EvntLbl
+{
+	position:absolute;
+	font-family: Trebuchet MS;
+	color:Black;	
+	top:15px;
+	left:5px;
+}
+
+.trigerEventDropDown
+{
+	position:absolute;
+	left:10px;
+	top:55px;
+	width:150px;
+}
+
+.paramWin
+{
+	width:208px;
+	height:135px;
+	top:9px;
+	position:absolute;
+	background-color:White;
+}
+
+.tblapply
+{
+	position:absolute;
+	color:black;
+	left:80px;
+	top:80px;
+	white-space:nowrap;
+	width:110px;			
+}
+ 
+.tabText
+{
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 
+	font-weight:bold;	
+}
+
+.timeLineEvent
+{
+	top: 0px;
+	height: 62px;
+	position: absolute;			
+	text-overflow:clip;
+	overflow:hidden;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.eventNameText, .eventTypeText
+{
+	color: #ffffff;
+	text-align:center;
+	overflow: hidden;
+	vertical-align:middle;				
+}
+
+.waitEventLabel
+{
+	left: 50px;
+	top: 20px;
+	width: 124px;
+	height: 25px;
+	color: Gray;
+	text-align: center;
+	position: absolute;			
+}
+
+#unspecifiedEventDiv
+{
+	left: 25px;
+	top: 80px;
+	width: 230px;
+	height: 40px;
+	position: absolute;
+}
+
+.unspecifiedEvent
+{
+	color:Gray;
+	left:40px;
+	top: 5px;
+	position:absolute;
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 	
+	font-weight:bold;
+}
+
+#timedEventDiv
+{
+	left: 25px;
+	top: 150px;
+	width: 230px;
+	height: 80px;
+	position: absolute;
+}
+
+.timedEvent
+{
+	color:Gray;
+	left:40px;
+	top: 5px;
+	position:absolute;
+	font-family: Trebuchet MS ; 
+	font-size: 16px; 
+	line-height: 20px; 	
+	font-weight:bold;
+}
+
+.timeForEvent
+{
+	left: 114px;
+	width: 52px;
+	top: 35px;
+	height: 1px;
+	color: gray;
+	position: absolute;
+	font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	line-height: 18px;
+	font-weight:bold; 
+}
+
+.timeLineEventImg
+{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:25px;	
+}
+
+.deleteLink
+{
+	width:12%;
+	text-decoration:underline;
+	cursor:pointer;
+	text-align:left;
+	font-family: Trebuchet MS;
+	font-size: 14px;
+	line-height: 18px;
+	color:Blue;
+}
+
+#showOkTxt
+{
+	position:absolute;
+	top:120px;
+	left:105px;
+	cursor:pointer;
+	color:Black;
+	font-family:Trebuchet MS;
+}
+
+#showCancelTxt
+{
+	position:absolute;
+	top:120px;
+	left:212px;
+	cursor:pointer;
+	color:Black;
+	font-family:Trebuchet MS;
+}
+
+.innerPanel
+{
+	cursor: move;
+	background-color:#DDDDDD;
+	border-bottom-width:thick;
+	border-color: #4575B3;
+	height:24px;
+	text-align:Left;
+	border-left: #DDDDDD 10px solid;
+	vertical-align:middle;
+}
+
+.title
+{
+	font-size:16px;
+	font-family: Trebuchet MS;
+	font-weight:bold;
+	color:Black;
+}
+
+.bodyText
+{
+	 position:absolute;
+	 top:30px;
+	 left:10px;
+}
+
+.messageIcon
+{
+	cursor:pointer; 
+}
+
+.popupText
+{
+	font-family: Trebuchet MS;
+	color:Black;
+	left:5px;
+	top:5px;
+}
+
+.waitEvent
+{
+	cursor:pointer;
+}
+
+.showShowLabel
+{
+	position:relative;	
+}
+
+.timeLine
+{
+    border-right: white thin solid;
+	border-top: white thin solid;
+	border-left: white thin solid;
+	border-bottom: white thin solid;
+}
+
+.timeLineEventFrame, .timeLineEvent
+{
+    border-right: white 1px solid;
+	border-top: white 1px solid;
+	border-left: white 1px solid;
+	border-bottom: white 1px solid;
+}
+
+.featureType
+{
+    background-color:#CE9E97;
+}
+
+.trailerType
+{
+    background-color:#F47192;
+}
+
+.adType
+{
+    background-color:#ED78D6;
+}
+
+.shortType
+{
+    background-color:#00BB5E;
+}
+
+.otherType
+{
+    background-color:#6FAFF7;
+}
+
+.callplaylist
+{
+    background-color:Red;
+}
+
+.titleTypeProgress
+{
+	color:#CF0F05;
+	position:absolute;
+	left:650px;
+	top:160px;
+}
+
+.showHandlerControls
+{
+    position:absolute;
+    left:30px;
+    top:80px;
+    z-index:1000;
+}
+
+.callplaylist-interval
+{
+    background-color: #ec3738;
+}

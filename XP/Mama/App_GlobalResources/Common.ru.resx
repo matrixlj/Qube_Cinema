@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adsSpaceLessThanUsedSpace" xml:space="preserve">
+    <value>Указанная квота не может быть установлена т.к. новая квота для рекламных роликов меньше чем занимаемое ими в настоящее время место</value>
+  </data>
+  <data name="advertisement" xml:space="preserve">
+    <value>Реклама</value>
+  </data>
+  <data name="cannotDeleteTitle" xml:space="preserve">
+    <value>Нельзя удалить Заголовок </value>
+  </data>
+  <data name="cannotScheduleAnEventInThePast" xml:space="preserve">
+    <value>Нельзя установить событие в прошлом!</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>категория</value>
+  </data>
+  <data name="completedAt" xml:space="preserve">
+    <value>завершено в</value>
+  </data>
+  <data name="computer" xml:space="preserve">
+    <value>компьютер</value>
+  </data>
+  <data name="cue" xml:space="preserve">
+    <value>сигнал</value>
+  </data>
+  <data name="cueFailedSince" xml:space="preserve">
+    <value>Cигнал не выполнен с</value>
+  </data>
+  <data name="dalapathiNotFound" xml:space="preserve">
+    <value>Dalapathi не найдена</value>
+  </data>
+  <data name="dcpEntityServiceProviderNotFound" xml:space="preserve">
+    <value>dcpentityserviceprovider не найден</value>
+  </data>
+  <data name="invalidPath" xml:space="preserve">
+    <value>Неверный путь</value>
+  </data>
+  <data name="displayRows" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="downloadLog" xml:space="preserve">
+    <value>получить журнал</value>
+  </data>
+  <data name="eitherNameOrPathIsInvalid" xml:space="preserve">
+    <value>Недопустимое имя файла или путь</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>введите краткий путь</value>
+  </data>
+  <data name="eventId" xml:space="preserve">
+    <value>событие</value>
+  </data>
+  <data name="features" xml:space="preserve">
+    <value>фильмы</value>
+  </data>
+  <data name="fourProjectors" xml:space="preserve">
+    <value>четыре проектора</value>
+  </data>
+  <data name="get" xml:space="preserve">
+    <value>получить</value>
+  </data>
+  <data name="getKey" xml:space="preserve">
+    <value>получить ключ</value>
+  </data>
+  <data name="givenPlaylistIsNotPlayable" xml:space="preserve">
+    <value>Невозможно проиграть этот список</value>
+  </data>
+  <data name="ingest" xml:space="preserve">
+    <value>закачка</value>
+  </data>
+  <data name="track" xml:space="preserve">
+    <value>дорожка</value>
+  </data>
+  <data name="titleTrack" xml:space="preserve">
+    <value>заглавная дорожка</value>
+  </data>
+  <data name="ingestedAt" xml:space="preserve">
+    <value>загружено</value>
+  </data>
+  <data name="invalidAssetType" xml:space="preserve">
+    <value>Неверный тип данных</value>
+  </data>
+  <data name="invalidDatetime" xml:space="preserve">
+    <value>Неверные дата-время</value>
+  </data>
+  <data name="invalidEvent" xml:space="preserve">
+    <value>Событие не действительно</value>
+  </data>
+  <data name="invalidEventId" xml:space="preserve">
+    <value>Неверный идентификатор события</value>
+  </data>
+  <data name="invalidIpAddress" xml:space="preserve">
+    <value>Неверный адрес ip</value>
+  </data>
+  <data name="invalidJobIds" xml:space="preserve">
+    <value>Неверный идентификатор задания</value>
+  </data>
+  <data name="invalidKeyPath" xml:space="preserve">
+    <value>Неверный путь ключа</value>
+  </data>
+  <data name="invalidKeys" xml:space="preserve">
+    <value>Ключ не действителен</value>
+  </data>
+  <data name="invalidPlaylist" xml:space="preserve">
+    <value>Список воспроизведения не действителен</value>
+  </data>
+  <data name="invalidPlaylistId" xml:space="preserve">
+    <value>Неверный идентификатор списка воспроизведения</value>
+  </data>
+  <data name="invalidScheduleUUID" xml:space="preserve">
+    <value>Неверный UUID расписания</value>
+  </data>
+  <data name="invalidShow" xml:space="preserve">
+    <value>Шоу не действительно</value>
+  </data>
+  <data name="invalidShowId" xml:space="preserve">
+    <value>Неверный идентификатор Шоу</value>
+  </data>
+  <data name="invalidShowName" xml:space="preserve">
+    <value>Неверное имя Шоу</value>
+  </data>
+  <data name="invalidTitle" xml:space="preserve">
+    <value>Клип не действителен</value>
+  </data>
+  <data name="invalidTrack" xml:space="preserve">
+    <value>Дорожка не действительна</value>
+  </data>
+  <data name="invalidTrackId" xml:space="preserve">
+    <value>Неверный идентификатор дорожки</value>
+  </data>
+  <data name="invalidTransferUUID" xml:space="preserve">
+    <value>Неверный UUID передачи</value>
+  </data>
+  <data name="invalidURI" xml:space="preserve">
+    <value>Неверный URI</value>
+  </data>
+  <data name="invalidUUIDFormat" xml:space="preserve">
+    <value>Неверный формат UUID</value>
+  </data>
+  <data name="kdm" xml:space="preserve">
+    <value>kdm</value>
+  </data>
+  <data name="keyInfoProviderNotFound" xml:space="preserve">
+    <value>Провайдер ключа не найден</value>
+  </data>
+  <data name="loadShowFailed" xml:space="preserve">
+    <value>Загрузка шоу НЕ выполнена</value>
+  </data>
+  <data name="mediaFolderUsedSpaceLargerThanSpecifiedQuota" xml:space="preserve">
+    <value>Указанная квота ({0:0.####} MB) не может быть установлена, т.к. она менее используемого места ({1:0.####} MB)</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>сообщение</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>название</value>
+  </data>
+  <data name="namedIngestSelect" xml:space="preserve">
+    <value>выбор именованного пространства</value>
+  </data>
+  <data name="namedspace" xml:space="preserve">
+    <value>именованное пространство</value>
+  </data>
+  <data name="namedspaceIdIsNull" xml:space="preserve">
+    <value>идентификатор именованного пространства пуст</value>
+  </data>
+  <data name="novalidIngestableTitles" xml:space="preserve">
+    <value>нет валидных клипов для закачки</value>
+  </data>
+  <data name="objectNotFound" xml:space="preserve">
+    <value>{0} не найден для этого id {1}</value>
+  </data>
+  <data name="others" xml:space="preserve">
+    <value>прочее</value>
+  </data>
+  <data name="pauseFailedSince" xml:space="preserve">
+    <value>Пауза не выполнена с</value>
+  </data>
+  <data name="play" xml:space="preserve">
+    <value>Воспр.</value>
+  </data>
+  <data name="playFailedSince" xml:space="preserve">
+    <value>Воспроизведение не выполнено с</value>
+  </data>
+  <data name="playlists" xml:space="preserve">
+    <value>списки воспроизведения</value>
+  </data>
+  <data name="playlist" xml:space="preserve">
+    <value>список воспроизведения</value>
+  </data>
+  <data name="schedule" xml:space="preserve">
+    <value>расписание</value>
+  </data>
+  <data name="evnt" xml:space="preserve">
+    <value>cобытие</value>
+  </data>
+  <data name="pleaseSelectASignalFormat" xml:space="preserve">
+    <value>выберите формат сигнала</value>
+  </data>
+  <data name="pleaseSelectNumberOfProjectors" xml:space="preserve">
+    <value>выберите кол-во проекторов</value>
+  </data>
+  <data name="projector1Tab" xml:space="preserve">
+    <value>проектор 1</value>
+  </data>
+  <data name="projector2Tab" xml:space="preserve">
+    <value>проектор 2</value>
+  </data>
+  <data name="projector3Tab" xml:space="preserve">
+    <value>проектор 3</value>
+  </data>
+  <data name="projector4Tab" xml:space="preserve">
+    <value>проектор 4</value>
+  </data>
+  <data name="qube" xml:space="preserve">
+    <value>qube</value>
+  </data>
+  <data name="referredInShow" xml:space="preserve">
+    <value>Невозможно удалить клип. Есть ссылка из шоу</value>
+  </data>
+  <data name="resumeshowFailedSince" xml:space="preserve">
+    <value>Продолжить воспроизведение не выполнено с</value>
+  </data>
+  <data name="selectProjector" xml:space="preserve">
+    <value>выберите проектор</value>
+  </data>
+  <data name="selectResolution" xml:space="preserve">
+    <value>выберите разрешение</value>
+  </data>
+  <data name="selectShow" xml:space="preserve">
+    <value>выберите шоу</value>
+  </data>
+  <data name="selectShow2LoadOrResume" xml:space="preserve">
+    <value>выберите шоу для загрузки или продолжения</value>
+  </data>
+  <data name="selectShow2Modify" xml:space="preserve">
+    <value>выберите шоу для редактирования</value>
+  </data>
+  <data name="selectTimeZone" xml:space="preserve">
+    <value>выберите часовой пояс</value>
+  </data>
+  <data name="serverTimeIs" xml:space="preserve">
+    <value>начиная со времени</value>
+  </data>
+  <data name="shorts" xml:space="preserve">
+    <value>клипы</value>
+  </data>
+  <data name="show" xml:space="preserve">
+    <value>шоу</value>
+  </data>
+  <data name="showDrag" xml:space="preserve">
+    <value>выберите шоу для расписания</value>
+  </data>
+  <data name="showIdIsNull" xml:space="preserve">
+    <value>Идентификатор шоу пуст</value>
+  </data>
+  <data name="showNameAlreadyExists" xml:space="preserve">
+    <value>Название шоу уже существует</value>
+  </data>
+  <data name="showNameIsNull" xml:space="preserve">
+    <value>Название шоу пусто</value>
+  </data>
+  <data name="singleProjector" xml:space="preserve">
+    <value>одиночный проектор</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>источник</value>
+  </data>
+  <data name="startedAt" xml:space="preserve">
+    <value>начато в</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>статус</value>
+  </data>
+  <data name="stopFailedSince" xml:space="preserve">
+    <value>Стоп не выполнен с</value>
+  </data>
+  <data name="stoppedAt" xml:space="preserve">
+    <value>остановлено на</value>
+  </data>
+  <data name="system" xml:space="preserve">
+    <value>система</value>
+  </data>
+  <data name="timeNotAvailabe" xml:space="preserve">
+    <value>Шоу не может быть вставлено в расписание поскольку в это время уже установлено другое шоу</value>
+  </data>
+  <data name="timeWritten" xml:space="preserve">
+    <value>время записи</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>клип</value>
+  </data>
+  <data name="titleInfoProviderNotFound" xml:space="preserve">
+    <value>провайдер клипа не найден</value>
+  </data>
+  <data name="trailer" xml:space="preserve">
+    <value>трэйлеры</value>
+  </data>
+  <data name="twoProjectors" xml:space="preserve">
+    <value>два проектора</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>тип</value>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>имя пользователя</value>
+  </data>
+  <data name="usherNotFound" xml:space="preserve">
+    <value>Usher не найдена</value>
+  </data>
+  <data name="velaikaranServiceNotAvailable" xml:space="preserve">
+    <value>служба Velaikaran не доступна</value>
+  </data>
+  <data name="wait" xml:space="preserve">
+    <value>ждите</value>
+  </data>
+  <data name="assetNotAvailable" xml:space="preserve">
+    <value>{0} не доступно для данного assetUUID ({1}) в данном URI {2}</value>
+  </data>
+  <data name="commercial" xml:space="preserve">
+    <value>реклама</value>
+  </data>
+  <data name="playType" xml:space="preserve">
+    <value>тип воспр.</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>тест</value>
+  </data>
+  <data name="property" xml:space="preserve">
+    <value>свойство</value>
+  </data>
+  <data name="featureInfoProviderNotFound" xml:space="preserve">
+    <value>провайдер типа кинофильма не найден</value>
+  </data>
+  <data name="mediafolderAlreadyExists" xml:space="preserve">
+    <value>Медиа фолдер уже существует</value>
+  </data>
+  <data name="invalidMediaFolderPath" xml:space="preserve">
+    <value>Указанный путь Медиа фолдера не действителен</value>
+  </data>
+  <data name="feature" xml:space="preserve">
+    <value>фильм</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>общее</value>
+  </data>
+  <data name="mediaManagement" xml:space="preserve">
+    <value>управление медиа</value>
+  </data>
+  <data name="projector" xml:space="preserve">
+    <value>проектор</value>
+  </data>
+  <data name="timecode" xml:space="preserve">
+    <value>тайм-код</value>
+  </data>
+  <data name="invalidKeyEssence" xml:space="preserve">
+    <value>Ключ поврежден или пуст</value>
+  </data>
+  <data name="NullOrEmptyItem" xml:space="preserve">
+    <value>{0} отсутствует или пуст</value>
+  </data>
+  <data name="securityLogErrorMsg" xml:space="preserve">
+    <value>Воспроизведение не начато в виду ошибки безопасности проектора, попробуйте еще раз несколько позже.</value>
+  </data>
+  <data name="unsupportedMediaFolder" xml:space="preserve">
+    <value>Указанный путь к медиа папке не поддерживается.&lt;br&gt;Укажите корректный путь.</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+</root>

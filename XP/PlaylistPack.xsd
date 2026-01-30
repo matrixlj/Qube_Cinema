@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dcmlTypes="http://www.smpte-ra.org/433/2006/dcmlTypes" xmlns:dcmlCPL="http://www.smpte-ra.org/schemas/429-7/2006/CPL" xmlns:dcmlPPK="http://www.smpte-ra.org/430-8/2006/PPK" xmlns:dcmlSPL="http://www.smpte-ra.org/430-8/2006/SPL" xmlns:dcmlPCUE="http://www.smpte-ra.org/430-8/2006/PCUE" xmlns:dcmlPAT="http://www.smpte-ra.org/430-8/2007/PAT" targetNamespace="http://www.smpte-ra.org/430-8/2006/PPK" elementFormDefault="qualified" id="PlaylistPack">
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+	<xs:import namespace="http://www.smpte-ra.org/433/2006/dcmlTypes" schemaLocation="../dcmlTypes.xsd"/>
+	<xs:import namespace="http://www.smpte-ra.org/schemas/429-7/2006/CPL" schemaLocation="../cpl.xsd"/>
+	<xs:import namespace="http://www.smpte-ra.org/430-8/2006/SPL" schemaLocation="./ShowPlaylist.xsd"/>
+	<xs:element name="PlaylistPack" type="dcmlPPK:PlaylistPackInternalType"/>
+	<xs:complexType name="PlaylistPackInternalType">
+		<xs:sequence>
+			<xs:element name="PlaylistPackKind" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="Scope" type="xs:anyURI" use="optional" default="http://www.smpte-ra.org/schemas/430-8/2007/SPL#pack-kind"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Id" type="dcmlTypes:UUIDType"/>
+			<xs:element name="AnnotationText" type="dcmlTypes:UserTextType" minOccurs="0"/>
+			<xs:element name="StereoScopic" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="PlaylistSoundOverlay" type="dcmlPPK:PlaylistSoundOverlayType" minOccurs="0"/>
+			<xs:element name="PlayTypeChoice" type="dcmlPPK:PlayTypeChoiceType"/>
+			<xs:element name="Playlist" type="dcmlPPK:PlaylistType"/>
+			<xs:element name="EstimatedDuration" type="xs:time" minOccurs="0"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PlaylistPackExternalType">
+		<xs:sequence>
+			<xs:element name="PlaylistPackKind" minOccurs="0">
+				<xs:complexType>
+					<xs:attribute name="Scope" type="xs:anyURI" use="optional" default="http://www.smpte-ra.org/schemas/430-8/2007/SPL#pack-kind"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Id" type="dcmlTypes:UUIDType"/>
+			<xs:element name="AnnotationText" type="dcmlTypes:UserTextType" minOccurs="0"/>
+			<xs:element name="ContentVersion" type="dcmlCPL:ContentVersionType"/>
+			<xs:element name="Creator" type="dcmlTypes:UserTextType" minOccurs="0"/>
+			<xs:element name="IssueDate" type="xs:dateTime"/>
+			<xs:element name="Issuer" type="dcmlTypes:UserTextType" minOccurs="0"/>
+			<xs:element name="PlaylistSoundOverlay" type="dcmlPPK:PlaylistSoundOverlayType" minOccurs="0"/>
+			<xs:element name="PlayTypeChoice" type="dcmlPPK:PlayTypeChoiceType"/>
+			<xs:element name="Playlist" type="dcmlPPK:PlaylistType"/>
+			<xs:element name="EstimatedDuration" type="xs:time" minOccurs="0"/>
+			<xs:any namespace="##other" minOccurs="0"/>
+			<xs:sequence minOccurs="0">
+				<xs:element name="Signer" type="ds:KeyInfoType"/>
+				<xs:element ref="ds:Signature"/>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PlaylistType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="PlaylistMarker" type="dcmlPPK:PlaylistMarkerType"/>
+				<xs:any namespace="##other"/>
+			</xs:sequence>
+			<xs:choice>
+				<xs:element name="CompositionPlaylistId" type="dcmlTypes:UUIDType"/>
+				<xs:element name="CompositionPlaylistVersionId" type="xs:anyURI"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PlaylistMarkerType">
+		<xs:sequence>
+			<xs:element name="Id" type="dcmlTypes:UUIDType"/>
+			<xs:element name="Label">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="scope" type="xs:anyURI" use="optional" default="http://www.smpte-ra.org/schemas/430-8/2007/SPL#standard-markers"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AnnotationText" type="dcmlTypes:UserTextType" minOccurs="0"/>
+			<xs:element name="Offset" default="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:unsignedLong">
+							<xs:attribute name="EditRate" type="dcmlTypes:RationalType" default="1 1"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PlayTypeChoiceType">
+		<xs:choice>
+			<xs:element name="PlayDuration" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:time">
+							<xs:attribute name="MaxPlayCount" type="xs:unsignedInt"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PlayCount" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:unsignedInt">
+							<xs:attribute name="MaxDuration" type="xs:time"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="PlaylistSoundOverlayType">
+		<xs:sequence>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CompositionPlaylistId" type="dcmlTypes:UUIDType" minOccurs="0"/>
+				<xs:element name="CompositionPlaylistVersionId" type="dcmlTypes:UUIDType" minOccurs="0"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="PreseveMainSound" type="xs:boolean" default="false"/>
+	</xs:complexType>
+</xs:schema>

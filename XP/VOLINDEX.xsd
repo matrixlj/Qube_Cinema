@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	targetNamespace="http://www.digicine.com/PROTO-ASDCP-VL-20040311#"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:vl="http://www.digicine.com/PROTO-ASDCP-VL-20040311#" 
+	xmlns:cpl="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#"
+	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	
+	<xs:import namespace="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#" 
+		schemaLocation="http://www.digicine.com/PROTO-ASDCP-CPL-20040511.xsd" />
+	
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" 
+		schemaLocation="http://www.w3.org/2001/03/xml.xsd" />
+	
+	<xs:element name="VolumeIndex">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Index" type="xs:unsignedInt" />
+				<xs:element name="AnnotationText" type="cpl:UserText" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

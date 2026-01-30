@@ -1,0 +1,420 @@
+﻿#currentIngestsDiv
+{
+	overflow: scroll;
+	overflow-x:hidden;
+	position: absolute;
+	float: left;
+	left: 37px;
+	width: 932px;
+	top: 155px;
+	height: 202px;
+	background-color:White;
+}
+
+#currentIngestsTable
+{
+	left: 0px;
+	width: 930px;
+	top: 0px;
+	position:relative;
+}
+
+.jobName
+{
+	vertical-align: middle;
+	text-align: left;
+	overflow: hidden; 
+	float:left; 	
+}
+
+.progressLabel
+{
+	vertical-align: middle;
+	text-align: left;	
+	width:45px;
+}
+
+.progressBar
+{
+	width: 0px;	
+	height: 14px;	
+	background-repeat: repeat-x;
+	float:left; 
+	margin-top:5px;	
+	vertical-align:bottom;
+}
+
+.verifyingProgressBar
+{
+	width: 0px;
+	height: 14px;	
+	background-repeat: repeat-x;
+	float:left; 
+	margin-top:5px;	
+	vertical-align:bottom;    
+}
+
+.titleList
+{
+	position:absolute;
+	background-color:White;
+}
+
+.popup
+{
+	padding:3px;
+	width:600px;
+	min-height:350px;
+	cursor:auto;
+}
+
+.check
+{
+	cursor:pointer;	
+	padding-top:0px;	
+}
+
+.compositionCheck
+{
+	cursor:pointer;
+}
+
+.composition
+{	
+	font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	line-height: 18px; 
+	color: black;
+}
+
+#CompositionsTable tr
+{
+	padding-bottom:0px;
+	padding-top:0px;		
+}
+
+.name
+{
+	color:Black;
+	vertical-align:middle;
+}
+
+.allCompositions
+{
+	font-weight:bold;		
+	margin-left:5px;	
+	font-family: Trebuchet MS ; 
+	font-size: 14px; 
+	line-height: 18px; 
+	color: black;
+}
+
+.cell
+{	
+	vertical-align:top;
+	text-align:left;
+	padding-left:3px;
+	width:100%;	
+}
+
+.checkCell
+{
+	vertical-align:top;
+	padding-left:2px;	
+	width:1px;		
+}
+
+.allCompositionsCell
+{
+	vertical-align:top;
+}
+
+.rowStyleIngest
+{
+	height:15;
+}
+
+.userName
+{
+	width: 159px;
+	color:black;
+}
+
+.password
+{
+	width: 159px;
+	color:black;		
+}
+
+.ingestPath
+{
+	width: 320px;
+	height: 16px;
+	color:black;
+}
+
+.watermarkIngestPath
+{
+	width: 320px;
+	height: 16px;
+	color:Gray;
+	font-weight:normal;
+}
+
+.watermarkUserName
+{
+	width:159px;
+	color:Gray;
+	font-weight:normal;
+}
+
+#currentIngestLabel
+{
+	 position: absolute;
+	 left: 71px;
+	 top: 81px;
+}
+
+#statusLabel
+{
+	 position: absolute;
+	 left: 46px;
+	 top: 123px;
+}
+#compositionLabel
+{
+	position: absolute;
+	left: 107px;
+	top: 123px;
+}
+
+#progressLabel
+{
+	position: absolute;
+	left: 495px;
+	top: 123px;
+}
+
+.ingestStatusInfo
+{
+	position:absolute;
+	left:300px;
+	top:376px;
+	width:680px;
+}
+
+.ingestStatusInfo table td
+{
+	padding-left:10px;
+}
+
+.addIngestButton
+{
+	 position: absolute;
+	 left: 26px;
+	 top: 376px;
+	 width:126px;
+	 height:32px;	 
+	 background-repeat:no-repeat;
+}
+
+#addIngestButton
+{
+	background-image:url("../res/Skins/#SKINCOLOUR#/Ingest/Add Ingest Button English.gif");
+}
+
+#spnAddNamedIngest
+{
+	font-size:14px;
+}
+
+.namedLabel
+{	
+	position:relative;
+	width:275px;
+}
+
+#addIngestDiv
+{
+	position: absolute;
+	left: 26px;	
+	top: 420px;	
+	display: none;	
+	min-width:482px;
+}
+
+.tblAddIngest
+{
+	width:482px;
+}
+
+.tblAddIngest td
+{
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.popupDiv
+{
+	position:absolute; 
+	height:268px;
+	width:599px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.popupTable
+{
+	position:absolute;
+	left:0px;
+	top:0px;		
+	border-bottom-width:thick;	
+}
+
+#currentIngestsTable td
+{
+	padding-top:5px;
+	padding-bottom:5px;	
+}
+
+#spnNewIndicator
+{
+	left:14px;
+	top:338px;
+}
+
+#spnNewCompositionIndicator
+{
+	left:22px;
+	top:335px;
+}
+
+#spnNewCompositionIndicator, #spnNewIndicator
+{
+	position:absolute;		
+	font-family: Trebuchet MS ; 
+	font-size: 12px; 
+	line-height: 18px; 
+	font-weight:normal;
+}
+
+#ingestDiv span
+{
+	white-space:nowrap;
+}
+
+.progressTD
+{
+	width:295px;
+	vertical-align:middle;
+	text-align:left;
+}
+
+.saveNamedIngest
+{
+	position:absolute;
+	left: 0px;
+	top: 158px;	
+	width:100%;
+}
+
+.watermarkNamedIngest, .txtNamedIngest
+{
+	width: 320px;
+	height: 16px;
+	color:Gray;
+	font-weight:normal;
+}
+
+.txtNamedIngest
+{
+	color:Black;
+}
+
+.spliter1
+{	
+	width:100%;
+	position:absolute;
+	top:37px;
+	left:0px;
+	height:1px;
+}
+
+.spliter2
+{
+	width:100%;
+	height:1px;
+}
+
+.shortnamedelete
+{
+	cursor:pointer;
+}
+
+.ingestButton
+{
+    width:126px;
+    height:32px;
+    background-image:url("../res/Skins/#SKINCOLOUR#/Ingest/Ingest Button English.gif");
+    background-repeat:no-repeat;
+}
+
+.ingestNew, .re-ingest
+{
+    position:relative;		
+    width:598px;		
+}
+
+.re-ingest
+{    
+    height:0px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+
+.ingestNew
+{
+    height:270px;
+    overflow:scroll;
+	overflow-x:hidden;
+}
+
+.ingestableTitleFrame
+{
+    background-color:white;
+    width:598px;
+    padding:1px 1px 0px 1px;    
+}
+
+.ingestableTitleBackgroundColor
+{
+    background-color:#D3CFC7;    
+}
+
+.leaveContentAtSourceContainer
+{
+	position:absolute;
+	top:310px;
+	left:0px;
+	width:350px;	
+}
+
+.popupIngestButton
+{
+    left:370px;
+    top:310px;
+    position:absolute;
+}
+
+.popupCancelButton
+{
+    left:488px;
+    top:310px;
+    position:absolute;
+}
+
+.progressInfoLabel
+{
+    padding-left:5px;
+}

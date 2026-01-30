@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Devices xmlns="http://schemas.qubecinema.com/Automation/Devices/2008-01-26">
+
+  <!--true,false-To enable Christie automation through TCP,make enable=true-->
+  <Device name="Christie" class="Qube.Automation.Christie.TCP, Christie" enable="true">
+    <Configuration>
+      <Key name="File" value="Christie.dll"/>
+      <Key name="Address" value="10.42.139.100"/> <!--Christie Projector IP-->
+      <Key name="Port" value="5000"/>
+      <Key name="KeepAlive" value ="OFF"/>
+    </Configuration>
+    <Init>
+      <Parameter name="UserName" value="service" /> <!--Enter the Username,Password of Christie-->
+      <Parameter name="Password" value="service"/>
+    </Init>
+  </Device>
+
+ <!--true,false-To enable JNIOR automation, make enable=true-->
+  <Device name="JNIOR" class="Qube.Automation.JNIOR.TCP, JNIOR" enable="true">
+    <Configuration>
+      <Key name="Address" value="10.42.139.135"/>
+      <Key name="UserName" value="jnior"/>
+      <Key name="Password" value="jnior"/>
+      <Key name="KeepAlive" value ="OFF"/>
+    </Configuration>
+  </Device>
+
+  <Device name="CP750" class="Qube.Automation.StreamDevice.TCP" enable="true">
+    <Configuration>
+      <Key name="File" value="DolbyCP750.xml" />
+      <Key name="Address" value="10.42.139.136"/>
+      <Key name="Port" value="61408"/>
+      <Key name="KeepAlive" value ="OFF"/>
+    </Configuration>
+
+  </Device>
+
+  <Device name="Me" class="Qube.Automation.SMS, pe" enable="true"/>
+
+</Devices>

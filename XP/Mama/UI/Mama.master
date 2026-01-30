@@ -1,0 +1,243 @@
+<%@ Master Language="C#" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server" enableviewstate="false">
+    <title>Qube Digital Cinema</title>    
+    <link href="Styles/Master.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Dummy.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Status.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Control.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Shows.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/logs.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Ingest.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Keys.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Setup.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Maintenance.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Schedule.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Media.css" rel="stylesheet" type="text/css" />
+    <script runat="server">
+        private string _skinName = String.Empty;
+        private string _userGroup = String.Empty;
+        private string _screenCode = String.Empty;
+        private string _theatreCode = String.Empty;
+
+        public string SkinName
+        {
+            get
+            {
+                return _skinName;
+            }
+        }
+
+        public string UserGroup
+        {
+            get
+            {
+                return _userGroup;
+            }
+        }
+
+        public string TheatreCode
+        {
+            get
+            {
+                return _theatreCode;
+            }
+        }
+
+        public string ScreenCode
+        {
+            get
+            {
+                return _screenCode;
+            }
+        }
+        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            _skinName = Qube.Mama.Utils.GetSkinName();
+
+            lblUserName.Text = Environment.UserName; 
+            
+            Qube.Mama.Catalog catalogWS = new Qube.Mama.Catalog();
+            _userGroup = catalogWS.GetUserGroup();
+
+            try
+            {
+                Qube.Mama.Dalapathi dalapathiWS = new Qube.Mama.Dalapathi();
+                serialNumberLink.Text = dalapathiWS.GetSerialNumber();
+            }
+            catch (Exception) { }
+
+            System.Collections.Generic.List<Guid?> properties = new System.Collections.Generic.List<Guid?>();
+
+            Guid theatreCodeID = new Guid("748C49D8-E900-4ff7-830D-421F348A115A");
+            Guid screenCodeID = new Guid("0D442334-6902-41d9-9888-C2123B5F2F9C");
+
+            properties.Add(theatreCodeID);
+            properties.Add(screenCodeID);
+
+            try
+            {
+                Qube.XP.PropertyValue[] propertyValues = catalogWS.GetProperties(properties.ToArray(), null);
+
+                for (int i = 0; i < propertyValues.Length; ++i)
+                {
+                    Qube.XP.PropertyValue propertyValue = propertyValues[i];
+                    
+                    if (Guid.Equals(propertyValue.Property.ID, theatreCodeID))
+                        _theatreCode = propertyValue.Value;
+                    else if (Guid.Equals(propertyValue.Property.ID, screenCodeID))
+                        _screenCode = propertyValue.Value;
+                }
+            }
+            catch (Exception) { }
+        }
+    </script>
+</head>
+
+    <script type="text/javascript">
+        var skin = "<%= SkinName %>";
+        var userGroup = "<%= UserGroup %>";
+        var masterTheatreCode = "<%= TheatreCode %>";
+        var masterScreenCode = "<%= ScreenCode %>";
+    </script>
+<body>        
+    <form id="form1" runat="server" AUTOCOMPLETE = "off">
+        <ajaxToolkit:ToolkitScriptManager id="ScriptManager" runat="server" 
+            EnableScriptLocalization="True" EnablePageMethods="true" EnablePartialRendering="true">
+            <Scripts>
+                <asp:ScriptReference Name="Mama.UI.Script_GlobalResources.DisplayText.js" Assembly="Mama" />                
+            </Scripts>
+            <Services>
+                <asp:ServiceReference Path="~/Dalapathi.asmx" InlineScript="True" />
+                <asp:ServiceReference Path="~/Catalog.asmx" InlineScript="True" />
+                <asp:ServiceReference Path="~/Usher.asmx" InlineScript="True" />
+                <asp:ServiceReference Path="~/Logs.asmx" InlineScript="True" />
+                <asp:ServiceReference Path="~/Setup.asmx" InlineScript="True" />
+                <asp:ServiceReference Path="~/Maintenance.asmx" InlineScript="True" />
+            </Services>
+        </ajaxToolkit:ToolkitScriptManager>
+        
+        <script type="text/javascript" language="javascript" src="Scripts/AjaxDropDown.js"></script>    
+        <script type="text/javascript" language="javascript" src="Scripts/Progress.js"></script>
+        <script type="text/javascript" language="javascript" src="Scripts/Master.js"></script>
+        
+        <input tabindex="-1" type="image" src="res/Skins/<%= SkinName %>/Common/dummy.gif" onclick="return false;"/>
+        <span id="dummySpan"></span>
+        
+        <table class="menu" id="MenuTable" onselectstart="return false;">
+            <tr>            
+                <td><a id="statusMenu" href="javascript:MenuClick('Status');"></a></td>
+                <td><a id="controlMenu" href="javascript:MenuClick('Control');"></a></td>
+                <td><a id="showsMenu" href="javascript:MenuClick('Shows');"></a></td>
+                <td><a id="scheduleMenu" href="javascript:MenuClick('Schedule');"></a></td>
+                <td><a id="ingestMenu" href="javascript:MenuClick('Ingest');"></a></td>
+                <td><a id="keysMenu" href="javascript:MenuClick('Keys');"></a></td>   
+                <td><a id="mediaMenu" href="javascript:MenuClick('Media');"></a></td>   
+                <td><a id="logMenu" href="javascript:MenuClick('Logs');"></a></td>            
+                <td><a id="setupMenu" href="javascript:MenuClick('Setup');"></a></td>                
+                <td><a id="maintenanceMenu" style="display:none"></a></td>                
+            </tr>               
+        </table>  
+        <span id="versionLabel" class="versionLabel"></span>
+        <asp:HyperLink ID="serialNumberLink" runat="server" NavigateUrl="../../Mami/Dispatch/Backup.aspx"
+            CssClass="serialNumberLink" EnableViewState="false"></asp:HyperLink>
+        
+        <table border="0" cellpadding="0" cellspacing="0" class="loginInfo">
+            <tr>
+                <td align="right" style="white-space:nowrap;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td id="tdTheatreCode" style="display:none;">
+                                <span id="spnMasterTheatreCode" class="theatreCode"></span>                                                                
+                            </td>
+                            <td style="padding-right:10px;padding-left:3px">
+                                <span id="spnMasterTheatreCodeValue" class="theatreCodeValue"></span>
+                            </td>
+                            <td id="tdScreenCode" style="display:none;">
+                                <span id="spnMasterScreenCode" class="screenCode"></span>                                
+                            </td>
+                            <td style="padding-right:10px;padding-left:3px">
+                                <span id="spnMasterScreenCodeValue" class="screenCodeValue"></span>
+                            </td>
+                            <td style="padding-right:10px;white-space:nowrap;">
+                                <asp:Label ID="lblUserName" runat="server" CssClass="loginUserNameLabel" EnableViewState="false"></asp:Label>
+                            </td>
+                            <td style="white-space:nowrap;">
+                                <img id="logout" src="res/Skins/<%= SkinName %>/Common/logout_door.png" style="cursor:pointer;" onclick="javascript:self.close();" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>        
+                        
+        <input type="button" runat="server" id="dummy" class="dummy" tabindex="-1" enableviewstate="false"/>                
+        
+        <asp:contentplaceholder id="ContentPlaceHolder" runat="server"></asp:contentplaceholder>
+        
+        <asp:Panel ID="ConfirmationWindow" Style="display: none;" runat="server" 
+            CssClass="confirmationWindow" EnableViewState="false">
+            <table class="tblCW">
+                <tr>
+                    <td class="modalPopupTitle">
+                        <span style="white-space:normal;" id="titletxt"></span>
+                    </td>                    
+                </tr>
+                <tr>                    
+                    <td height="70px;" valign="top">
+                        <table>
+                            <tr>
+                                <td valign="top"><img src="" id="imgInfo" alt="" class="messageIcon" /></td>
+                                <td>
+                                    <div style="max-height:350px;overflow:auto;overflow-x:hidden;">
+                                        <span id="spnBodyText" class="confirmationWindowContentText" style="white-space:normal;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="bottom">
+                        <table cellpadding="0" cellspacing="0" style="vertical-align:bottom;">
+                            <tr>
+                                <td valign="bottom" id="divyes">
+                                    <table border="0" cellpadding="0" cellspacing="0" id="imgyes"
+                                        class="imgyes">
+                                        <tr>
+                                            <td>
+                                                <a class="buttonEnabledText" id="txtyes" href="#"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="bottom" id="divno">
+                                    <table border="0" cellpadding="0" cellspacing="0" id="imgno"
+                                        class="imgno">
+                                        <tr>
+                                            <td>
+                                                <a class="buttonEnabledText" id="txtno" href="#"></a>
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>                    
+                </tr>
+            </table>
+        </asp:Panel>
+                
+        <ajaxToolkit:ModalPopupExtender ID="mpCWindow" runat="server" BehaviorID="cw_BID"
+                    TargetControlID="dummy" PopupControlID="ConfirmationWindow" 
+                    DropShadow="True" BackgroundCssClass="modalPopupBackground"
+                    OkControlID="divyes" CancelControlID="divno" 
+                    DynamicServicePath="" Enabled="True" EnableViewState="false"/>
+    </form>    
+</body>
+</html>
